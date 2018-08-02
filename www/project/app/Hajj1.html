@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Hajj1
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/CSS1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/newCSS.css" />
+        <link type="text/css" rel="stylesheet" href="../css/HajjCSS.css" />
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../libs/cordova.js">
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript5.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript6.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript2.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript4.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript1.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper2.js">
+        </script>
+        <script type="text/javascript" src="../js/Hajj1js.js">
+        </script>
+        <script type="text/javascript" src="../js/hajj_JavaScript1.js">
+        </script>
+        <script type="text/javascript" src="../js/hajj2js.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery-ui-youtube/jquery.ui.youtube.js">
+        </script>
+        <script type="text/javascript" src="https://www.youtube.com/iframe_api">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Hajj1" id="Hajj1" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="mobileheader" id="Hajj1_mobileheader" class="grad3  Hajj1_mobileheader">
+                <h1 dsid="mobileheader">
+                    حملتي
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Hajj1_mobilecontainer" name="mobilecontainer" class="r_back  Hajj1_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="Hajj1.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Hajj1.js">
+                </script>
+                <!-- select_grid11 -->
+                <div class="Hajj1_select_grid11_wrapper" data-wrapper-for="select_grid11">
+                    <table id="Hajj1_select_grid11" class="Hajj1_select_grid11" dsid="select_grid11"
+                    name="select_grid11" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:294px;" />
+                        <col style="width:auto;" />
+                        <tr class="Hajj1_select_grid11_row_0">
+                            <!-- mobilegridcell_36 -->
+                            <td id="Hajj1_mobilegridcell_36" name="mobilegridcell_36" class="Hajj1_mobilegridcell_36"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_37 -->
+                            <td id="Hajj1_mobilegridcell_37" name="mobilegridcell_37" class="Hajj1_mobilegridcell_37"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilegrid_2 -->
+                                    <div class="Hajj1_mobilegrid_2_wrapper" data-wrapper-for="mobilegrid_2">
+                                        <table id="Hajj1_mobilegrid_2" class="Hajj1_mobilegrid_2" dsid="mobilegrid_2" name="mobilegrid_2"
+                                        cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_mobilegrid_2_row_0">
+                                                <!-- mobilegridcell_3 -->
+                                                <td id="Hajj1_mobilegridcell_3" name="mobilegridcell_3" class="Hajj1_mobilegridcell_3"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilegrid_15 -->
+                                                        <div class="Hajj1_mobilegrid_15_wrapper" data-wrapper-for="mobilegrid_15">
+                                                            <table id="Hajj1_mobilegrid_15" class="sline2  Hajj1_mobilegrid_15" dsid="mobilegrid_15"
+                                                            name="mobilegrid_15" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <tr class="Hajj1_mobilegrid_15_row_0">
+                                                                    <!-- mobilegridcell_16 -->
+                                                                    <td id="Hajj1_mobilegridcell_16" name="mobilegridcell_16" class="Hajj1_mobilegridcell_16"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_20 -->
+                                                                            <div name="mobilelabel_20" id="Hajj1_mobilelabel_20" dsid="mobilelabel_20" data-role="appery_label"
+                                                                            class="fline2  Hajj1_mobilelabel_20">
+                                                                                الخريطة التفاعلية
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_7 -->
+                                                <td id="Hajj1_mobilegridcell_7" name="mobilegridcell_7" class="Hajj1_mobilegridcell_7"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilegrid_9 -->
+                                                        <div class="Hajj1_mobilegrid_9_wrapper" data-wrapper-for="mobilegrid_9">
+                                                            <table id="Hajj1_mobilegrid_9" class="sline  Hajj1_mobilegrid_9" dsid="mobilegrid_9"
+                                                            name="mobilegrid_9" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <tr class="Hajj1_mobilegrid_9_row_0">
+                                                                    <!-- mobilegridcell_10 -->
+                                                                    <td id="Hajj1_mobilegridcell_10" name="mobilegridcell_10" class="Hajj1_mobilegridcell_10"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_14 -->
+                                                                            <div name="mobilelabel_14" id="Hajj1_mobilelabel_14" dsid="mobilelabel_14" data-role="appery_label"
+                                                                            class="fline  Hajj1_mobilelabel_14">
+                                                                                خريطة أعضاء الحملة
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_40 -->
+                            <td id="Hajj1_mobilegridcell_40" name="mobilegridcell_40" class="Hajj1_mobilegridcell_40"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Gridmap1 -->
+                <div class="Hajj1_Gridmap1_wrapper" data-wrapper-for="Gridmap1">
+                    <table id="Hajj1_Gridmap1" class="Hajj1_Gridmap1" dsid="Gridmap1" name="Gridmap1"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Hajj1_Gridmap1_row_0">
+                            <!-- mobilegridcell_79 -->
+                            <td id="Hajj1_mobilegridcell_79" name="mobilegridcell_79" class="Hajj1_mobilegridcell_79"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- option_gri -->
+                                    <div class="Hajj1_option_gri_wrapper" data-wrapper-for="option_gri">
+                                        <table id="Hajj1_option_gri" class="Hajj1_option_gri" dsid="option_gri" name="option_gri"
+                                        cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:149px;" />
+                                            <col style="width:148px;" />
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_option_gri_row_0">
+                                                <!-- mobilegridcell_50 -->
+                                                <td id="Hajj1_mobilegridcell_50" name="mobilegridcell_50" class="Hajj1_mobilegridcell_50"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_51 -->
+                                                <td id="Hajj1_mobilegridcell_51" name="mobilegridcell_51" class="Hajj1_mobilegridcell_51"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilebutton_54 --><!--
+                                                        --><a data-role="button" name="mobilebutton_54" dsid="mobilebutton_54" class="grad3  Hajj1_mobilebutton_54"
+                                                        id="Hajj1_mobilebutton_54" data-corners="true" data-icon="navigation" data-iconpos="left"
+                                                        x-apple-data-detectors="false" data-mini="true" data-theme="e" tabindex="2">
+                                                        تتبع قائد حملة
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_75 -->
+                                                <td id="Hajj1_mobilegridcell_75" name="mobilegridcell_75" class="Hajj1_mobilegridcell_75"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilebutton_55 --><!--
+                                                        --><a data-role="button" name="mobilebutton_55" dsid="mobilebutton_55" class="grad3  Hajj1_mobilebutton_55"
+                                                        id="Hajj1_mobilebutton_55" data-corners="true" data-icon="user" data-iconpos="left"
+                                                        x-apple-data-detectors="false" data-mini="true" data-theme="e" tabindex="3">
+                                                        تسجيل كقائد حملة
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_76 -->
+                                                <td id="Hajj1_mobilegridcell_76" name="mobilegridcell_76" class="Hajj1_mobilegridcell_76"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- leader_func -->
+                                    <div class="Hajj1_leader_func_wrapper" data-wrapper-for="leader_func">
+                                        <table id="Hajj1_leader_func" class="Hajj1_leader_func" dsid="leader_func" name="leader_func"
+                                        cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:149px;" />
+                                            <col style="width:149px;" />
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_leader_func_row_0">
+                                                <!-- mobilegridcell_206 -->
+                                                <td id="Hajj1_mobilegridcell_206" name="mobilegridcell_206" class="Hajj1_mobilegridcell_206"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_207 -->
+                                                <td id="Hajj1_mobilegridcell_207" name="mobilegridcell_207" class="Hajj1_mobilegridcell_207"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilebutton_90 --><!--
+                                                        --><a data-role="button" name="mobilebutton_90" dsid="mobilebutton_90" class="btnblue  Hajj1_mobilebutton_90"
+                                                        id="Hajj1_mobilebutton_90" data-corners="true" data-icon="comment" data-iconpos="left"
+                                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="6">
+                                                        رسالة لاعضاء
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_210 -->
+                                                <td id="Hajj1_mobilegridcell_210" name="mobilegridcell_210" class="Hajj1_mobilegridcell_210"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilebutton_214 --><!--
+                                                        --><a data-role="button" name="mobilebutton_214" dsid="mobilebutton_214" class="btnblue  Hajj1_mobilebutton_214"
+                                                        id="Hajj1_mobilebutton_214" data-corners="true" data-icon="plus" data-iconpos="left"
+                                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="24">
+                                                        اضافة مواقع
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_211 -->
+                                                <td id="Hajj1_mobilegridcell_211" name="mobilegridcell_211" class="Hajj1_mobilegridcell_211"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- stop_tack_g -->
+                                    <div class="Hajj1_stop_tack_g_wrapper" data-wrapper-for="stop_tack_g">
+                                        <table id="Hajj1_stop_tack_g" class="Hajj1_stop_tack_g" dsid="stop_tack_g" name="stop_tack_g"
+                                        cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:139px;" />
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_stop_tack_g_row_0">
+                                                <!-- mobilegridcell_216 -->
+                                                <td id="Hajj1_mobilegridcell_216" name="mobilegridcell_216" class="Hajj1_mobilegridcell_216"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_217 -->
+                                                <td id="Hajj1_mobilegridcell_217" name="mobilegridcell_217" class="Hajj1_mobilegridcell_217"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- msg_btnn --><!--
+                                                        --><a data-role="button" name="msg_btnn" dsid="msg_btnn" class="btnblue  Hajj1_msg_btnn"
+                                                        id="Hajj1_msg_btnn" data-corners="true" data-icon="mail" data-iconpos="left" x-apple-data-detectors="false"
+                                                        data-mini="true" data-theme="b" tabindex="30">
+                                                        (0) الرسائل
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_220 -->
+                                                <td id="Hajj1_mobilegridcell_220" name="mobilegridcell_220" class="Hajj1_mobilegridcell_220"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="Hajj1_stop_tack_g_row_1">
+                                                <!-- mobilegridcell_263 -->
+                                                <td id="Hajj1_mobilegridcell_263" name="mobilegridcell_263" class="Hajj1_mobilegridcell_263"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_264 -->
+                                                <td id="Hajj1_mobilegridcell_264" name="mobilegridcell_264" class="Hajj1_mobilegridcell_264"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilebutton_91 --><!--
+                                                        --><a data-role="button" name="mobilebutton_91" dsid="mobilebutton_91" class="grad3  Hajj1_mobilebutton_91"
+                                                        id="Hajj1_mobilebutton_91" data-corners="true" data-icon="delete" data-iconpos="left"
+                                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="7">
+                                                        إيقاف
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_265 -->
+                                                <td id="Hajj1_mobilegridcell_265" name="mobilegridcell_265" class="Hajj1_mobilegridcell_265"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- l_note -->
+                                    <div name="l_note" id="Hajj1_l_note" dsid="l_note" data-role="appery_label" class="Hajj1_l_note">
+                                    </div>
+                                    <!-- clear_direc -->
+                                    <div name="clear_direc" id="Hajj1_clear_direc" dsid="clear_direc" data-role="appery_label"
+                                    class="Hajj1_clear_direc">
+                                        مسح التوجيه
+                                    </div>
+                                    <!-- mobilegrid_44 -->
+                                    <div class="Hajj1_mobilegrid_44_wrapper" data-wrapper-for="mobilegrid_44">
+                                        <table id="Hajj1_mobilegrid_44" class="Hajj1_mobilegrid_44" dsid="mobilegrid_44"
+                                        name="mobilegrid_44" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_mobilegrid_44_row_0">
+                                                <!-- mobilegridcell_45 -->
+                                                <td id="Hajj1_mobilegridcell_45" name="mobilegridcell_45" class="Hajj1_mobilegridcell_45"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- gmapTrack -->
+                                                        <div id="Hajj1_gmapTrack" dsid="gmapTrack" name="gmapTrack" data-role="appery_googlemap"
+                                                        tiggzitype="object" apperytype="object" class='Hajj1_gmapTrack' style='width:100%;'>
+                                                        </div>
+                                                        <ul data-role="listview" id="Hajj1_gmapTrack_markers" name="gmapTrack_markers" dsid="gmapTrack_markers"
+                                                        style="display:none">
+                                                            <!-- marker_43 -->
+                                                            <li id="Hajj1_marker_43" name="marker_43" dsid="marker_43" tiggzitype="marker" apperytype="marker"
+                                                            rendered="false" latitude="" longitude="" text="Add Components Here" address="mecca, ksa"
+                                                            show_info="false" style="display:none">
+                                                                <div id="Hajj1_marker_43_infoWindow" name="marker_43_infoWindowContent" class='Hajj1_marker_43'>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- gridmap2 -->
+                <div class="Hajj1_gridmap2_wrapper" data-wrapper-for="gridmap2">
+                    <table id="Hajj1_gridmap2" class="Hajj1_gridmap2" dsid="gridmap2" name="gridmap2"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Hajj1_gridmap2_row_0">
+                            <!-- mobilegridcell_130 -->
+                            <td id="Hajj1_mobilegridcell_130" name="mobilegridcell_130" class="Hajj1_mobilegridcell_130"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilegrid_141 -->
+                                    <div class="Hajj1_mobilegrid_141_wrapper" data-wrapper-for="mobilegrid_141">
+                                        <table id="Hajj1_mobilegrid_141" class="Hajj1_mobilegrid_141" dsid="mobilegrid_141"
+                                        name="mobilegrid_141" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:154px;" />
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_mobilegrid_141_row_0">
+                                                <!-- mobilegridcell_142 -->
+                                                <td id="Hajj1_mobilegridcell_142" name="mobilegridcell_142" class="Hajj1_mobilegridcell_142"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_143 -->
+                                                <td id="Hajj1_mobilegridcell_143" name="mobilegridcell_143" class="Hajj1_mobilegridcell_143"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobileselectmenu_148 -->
+                                                        <div data-role="fieldcontain" class="Hajj1_mobileselectmenu_148 gradx">
+                                                            <select name="mobileselectmenu_148" id="Hajj1_mobileselectmenu_148" dsid="mobileselectmenu_148"
+                                                            data-theme="b" data-role="appery_selectmenu" data-inline="false" data-mini="true"
+                                                            data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="14" appery-class="Hajj1_mobileselectmenu_148">
+                                                                <option id="Hajj1_mobileselectmenu_148-0" value="1" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-0" selected="selected">
+                                                                    المشاعر
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-1" value="2" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-1">
+                                                                    مخيمات
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-2" value="3" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-2">
+                                                                    مساجد
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-3" value="4" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-3">
+                                                                    مطاعم
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-4" value="5" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-4">
+                                                                    قطار
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-5" value="6" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-5">
+                                                                    باصات
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-6" value="7" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-6">
+                                                                    المراكز الطبية
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-7" value="8" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-7">
+                                                                    دورات المياة
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-8" value="9" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-8">
+                                                                    نفايات
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-9" value="10" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-9">
+                                                                    الشرطة
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-10" value="11" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-10">
+                                                                    مفقودات
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-11" value="12" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-11">
+                                                                    ماء زمزم
+                                                                </option>
+                                                                <option id="Hajj1_mobileselectmenu_148-12" value="13" reRender="mobileselectmenu_148"
+                                                                dsid="mobileselectmenu_148-12">
+                                                                    تكاسي
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_146 -->
+                                                <td id="Hajj1_mobilegridcell_146" name="mobilegridcell_146" class="Hajj1_mobilegridcell_146"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- mobilegrid_136 -->
+                                    <div class="Hajj1_mobilegrid_136_wrapper" data-wrapper-for="mobilegrid_136">
+                                        <table id="Hajj1_mobilegrid_136" class="Hajj1_mobilegrid_136" dsid="mobilegrid_136"
+                                        name="mobilegrid_136" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_mobilegrid_136_row_0">
+                                                <!-- mobilegridcell_137 -->
+                                                <td id="Hajj1_mobilegridcell_137" name="mobilegridcell_137" class="Hajj1_mobilegridcell_137"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- gmap2 -->
+                                                        <div id="Hajj1_gmap2" dsid="gmap2" name="gmap2" data-role="appery_googlemap" tiggzitype="object"
+                                                        apperytype="object" class='Hajj1_gmap2' style='width:100%;'>
+                                                        </div>
+                                                        <ul data-role="listview" id="Hajj1_gmap2_markers" name="gmap2_markers" dsid="gmap2_markers"
+                                                        style="display:none">
+                                                            <!-- marker_135 -->
+                                                            <li id="Hajj1_marker_135" name="marker_135" dsid="marker_135" tiggzitype="marker"
+                                                            apperytype="marker" rendered="false" latitude="" longitude="" text="Add Components Here"
+                                                            address="San Francisco, CA" show_info="false" style="display:none">
+                                                                <div id="Hajj1_marker_135_infoWindow" name="marker_135_infoWindowContent" class='Hajj1_marker_135'>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- admin_gridmap -->
+                <div class="Hajj1_admin_gridmap_wrapper" data-wrapper-for="admin_gridmap">
+                    <table id="Hajj1_admin_gridmap" class="Hajj1_admin_gridmap" dsid="admin_gridmap"
+                    name="admin_gridmap" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Hajj1_admin_gridmap_row_0">
+                            <!-- mobilegridcell_151 -->
+                            <td id="Hajj1_mobilegridcell_151" name="mobilegridcell_151" class="Hajj1_mobilegridcell_151"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilegrid_162 -->
+                                    <div class="Hajj1_mobilegrid_162_wrapper" data-wrapper-for="mobilegrid_162">
+                                        <table id="Hajj1_mobilegrid_162" class="Hajj1_mobilegrid_162" dsid="mobilegrid_162"
+                                        name="mobilegrid_162" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:134px;" />
+                                            <col style="width:134px;" />
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_mobilegrid_162_row_0">
+                                                <!-- mobilegridcell_163 -->
+                                                <td id="Hajj1_mobilegridcell_163" name="mobilegridcell_163" class="Hajj1_mobilegridcell_163"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_164 -->
+                                                <td id="Hajj1_mobilegridcell_164" name="mobilegridcell_164" class="Hajj1_mobilegridcell_164"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilebutton_167 --><!--
+                                                        --><a data-role="button" name="mobilebutton_167" dsid="mobilebutton_167" class="grad  Hajj1_mobilebutton_167"
+                                                        id="Hajj1_mobilebutton_167" data-corners="true" data-icon="plus" data-iconpos="left"
+                                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="16">
+                                                        اضافة موقع
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_169 -->
+                                                <td id="Hajj1_mobilegridcell_169" name="mobilegridcell_169" class="Hajj1_mobilegridcell_169"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilebutton_168 --><!--
+                                                        --><a data-role="button" name="mobilebutton_168" dsid="mobilebutton_168" class="grad  Hajj1_mobilebutton_168"
+                                                        id="Hajj1_mobilebutton_168" data-corners="true" data-icon="delete" data-iconpos="left"
+                                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="17">
+                                                        حذف موقع
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_170 -->
+                                                <td id="Hajj1_mobilegridcell_170" name="mobilegridcell_170" class="Hajj1_mobilegridcell_170"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- mobilegrid_197 -->
+                                    <div class="Hajj1_mobilegrid_197_wrapper" data-wrapper-for="mobilegrid_197">
+                                        <table id="Hajj1_mobilegrid_197" class="Hajj1_mobilegrid_197" dsid="mobilegrid_197"
+                                        name="mobilegrid_197" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:134px;" />
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_mobilegrid_197_row_0">
+                                                <!-- mobilegridcell_198 -->
+                                                <td id="Hajj1_mobilegridcell_198" name="mobilegridcell_198" class="Hajj1_mobilegridcell_198"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_199 -->
+                                                <td id="Hajj1_mobilegridcell_199" name="mobilegridcell_199" class="Hajj1_mobilegridcell_199"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilebutton_204 --><!--
+                                                        --><a data-role="button" name="mobilebutton_204" dsid="mobilebutton_204" class="grad  Hajj1_mobilebutton_204"
+                                                        id="Hajj1_mobilebutton_204" data-corners="true" data-icon="edit" data-iconpos="left"
+                                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="23">
+                                                        تحديث
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_202 -->
+                                                <td id="Hajj1_mobilegridcell_202" name="mobilegridcell_202" class="Hajj1_mobilegridcell_202"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- addPlacegrig -->
+                                    <div class="Hajj1_addPlacegrig_wrapper" data-wrapper-for="addPlacegrig">
+                                        <table id="Hajj1_addPlacegrig" class="Hajj1_addPlacegrig" dsid="addPlacegrig" name="addPlacegrig"
+                                        cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_addPlacegrig_row_0">
+                                                <!-- mobilegridcell_172 -->
+                                                <td id="Hajj1_mobilegridcell_172" name="mobilegridcell_172" class="Hajj1_mobilegridcell_172"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilegrid_176 -->
+                                                        <div class="Hajj1_mobilegrid_176_wrapper" data-wrapper-for="mobilegrid_176">
+                                                            <table id="Hajj1_mobilegrid_176" class="Hajj1_mobilegrid_176" dsid="mobilegrid_176"
+                                                            name="mobilegrid_176" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <col style="width:204px;" />
+                                                                <col style="width:auto;" />
+                                                                <tr class="Hajj1_mobilegrid_176_row_0">
+                                                                    <!-- mobilegridcell_177 -->
+                                                                    <td id="Hajj1_mobilegridcell_177" name="mobilegridcell_177" class="Hajj1_mobilegridcell_177"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_178 -->
+                                                                    <td id="Hajj1_mobilegridcell_178" name="mobilegridcell_178" class="Hajj1_mobilegridcell_178"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobileselectmenu_186 -->
+                                                                            <div data-role="fieldcontain" class="Hajj1_mobileselectmenu_186 ">
+                                                                                <select name="mobileselectmenu_186" id="Hajj1_mobileselectmenu_186" dsid="mobileselectmenu_186"
+                                                                                data-theme="b" data-role="appery_selectmenu" data-inline="false" data-mini="true"
+                                                                                data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="18" appery-class="Hajj1_mobileselectmenu_186">
+                                                                                    <option id="Hajj1_mobileselectmenu_186-0" value="1" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-0" selected="selected">
+                                                                                        الطواف ١
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-1" value="2" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-1">
+                                                                                        الطواف ٢
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-2" value="3" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-2">
+                                                                                        الطواف ٣
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-3" value="4" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-3">
+                                                                                        الطواف ٤
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-4" value="5" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-4">
+                                                                                        الطواف ٥
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-5" value="6" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-5">
+                                                                                        الطواف ٦
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-6" value="7" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-6">
+                                                                                        المسعى ١
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-7" value="8" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-7">
+                                                                                        المسعى ٢
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-8" value="9" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-8">
+                                                                                        المسعى ٣
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-9" value="10" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-9">
+                                                                                        المسعى ٤
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-10" value="11" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-10">
+                                                                                        المسعى ٥
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-11" value="12" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-11">
+                                                                                        المسعى ٦
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-12" value="13" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-12">
+                                                                                        الجمرات ١
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-13" value="14" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-13">
+                                                                                        الجمرات ٢
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-14" value="15" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-14">
+                                                                                        الجمرات ٣
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-15" value="16" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-15">
+                                                                                        الجمرات ٤
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-16" value="17" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-16">
+                                                                                        الجمرات ٥
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-17" value="18" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-17">
+                                                                                        الجمرات ٦
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-18" value="19" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-18">
+                                                                                        الجمرات ٧
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-19" value="20" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-19">
+                                                                                        عرفات
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-20" value="21" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-20">
+                                                                                        منى
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-21" value="22" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-21">
+                                                                                        مزدلفة
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-22" value="23" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-22">
+                                                                                        مخيمات
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-23" value="24" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-23">
+                                                                                        المراكز الطبية
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-24" value="25" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-24">
+                                                                                        باصات
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-25" value="26" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-25">
+                                                                                        تكاسي
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-26" value="27" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-26">
+                                                                                        ماء زمزم
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-27" value="28" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-27">
+                                                                                        دورات مياة
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-28" value="29" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-28">
+                                                                                        نفايات
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-29" value="30" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-29">
+                                                                                        مطاعم
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-30" value="31" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-30">
+                                                                                        الشرطة
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-31" value="32" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-31">
+                                                                                        مفقودات
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-32" value="33" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-32">
+                                                                                        قطار
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_186-33" value="34" reRender="mobileselectmenu_186"
+                                                                                    dsid="mobileselectmenu_186-33">
+                                                                                        مساجد
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_181 -->
+                                                                    <td id="Hajj1_mobilegridcell_181" name="mobilegridcell_181" class="Hajj1_mobilegridcell_181"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="Hajj1_mobilegrid_176_row_1">
+                                                                    <!-- mobilegridcell_179 -->
+                                                                    <td id="Hajj1_mobilegridcell_179" name="mobilegridcell_179" class="Hajj1_mobilegridcell_179"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_180 -->
+                                                                    <td id="Hajj1_mobilegridcell_180" name="mobilegridcell_180" class="Hajj1_mobilegridcell_180"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_196 -->
+                                                                            <div name="mobilelabel_196" id="Hajj1_mobilelabel_196" dsid="mobilelabel_196" data-role="appery_label"
+                                                                            class="Hajj1_mobilelabel_196">
+                                                                                حرك العلامة او ضع الاحداثيات*
+                                                                            </div>
+                                                                            <!-- mobiletextinput_188 -->
+                                                                            <div data-role="fieldcontain" class="Hajj1_mobiletextinput_188 ">
+                                                                                <input type="text" name="mobiletextinput_188" dsid="mobiletextinput_188" value=""
+                                                                                placeholder="Lat 24.5555" id="Hajj1_mobiletextinput_188" tabindex="19" multiple data-theme="b"
+                                                                                class="Hajj1_mobiletextinput_188" />
+                                                                            </div>
+                                                                            <!-- mobiletextinput_189 -->
+                                                                            <div data-role="fieldcontain" class="Hajj1_mobiletextinput_189 ">
+                                                                                <input type="text" name="mobiletextinput_189" dsid="mobiletextinput_189" value=""
+                                                                                placeholder="Long 44.5555" id="Hajj1_mobiletextinput_189" tabindex="20" multiple
+                                                                                data-theme="b" class="Hajj1_mobiletextinput_189" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_182 -->
+                                                                    <td id="Hajj1_mobilegridcell_182" name="mobilegridcell_182" class="Hajj1_mobilegridcell_182"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="Hajj1_mobilegrid_176_row_2">
+                                                                    <!-- mobilegridcell_183 -->
+                                                                    <td id="Hajj1_mobilegridcell_183" name="mobilegridcell_183" class="Hajj1_mobilegridcell_183"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_184 -->
+                                                                    <td id="Hajj1_mobilegridcell_184" name="mobilegridcell_184" class="Hajj1_mobilegridcell_184"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobileselectmenu_190 -->
+                                                                            <div data-role="fieldcontain" class="Hajj1_mobileselectmenu_190 ">
+                                                                                <select name="mobileselectmenu_190" id="Hajj1_mobileselectmenu_190" dsid="mobileselectmenu_190"
+                                                                                data-theme="b" data-role="appery_selectmenu" data-inline="false" data-mini="true"
+                                                                                data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="21" appery-class="Hajj1_mobileselectmenu_190">
+                                                                                    <option id="Hajj1_mobileselectmenu_190-0" value="0" reRender="mobileselectmenu_190"
+                                                                                    dsid="mobileselectmenu_190-0" selected="selected">
+                                                                                        الحالة
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_190-1" value="1" reRender="mobileselectmenu_190"
+                                                                                    dsid="mobileselectmenu_190-1">
+                                                                                        ثابت
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_190-2" value="2" reRender="mobileselectmenu_190"
+                                                                                    dsid="mobileselectmenu_190-2">
+                                                                                        غير مزدحم
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_190-3" value="3" reRender="mobileselectmenu_190"
+                                                                                    dsid="mobileselectmenu_190-3">
+                                                                                        مزدحم قليلا
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_190-4" value="4" reRender="mobileselectmenu_190"
+                                                                                    dsid="mobileselectmenu_190-4">
+                                                                                        مزدحم جدا
+                                                                                    </option>
+                                                                                    <option id="Hajj1_mobileselectmenu_190-5" value="5" reRender="mobileselectmenu_190"
+                                                                                    dsid="mobileselectmenu_190-5">
+                                                                                        خارج الخدمة
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_185 -->
+                                                                    <td id="Hajj1_mobilegridcell_185" name="mobilegridcell_185" class="Hajj1_mobilegridcell_185"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="Hajj1_mobilegrid_176_row_3">
+                                                                    <!-- mobilegridcell_192 -->
+                                                                    <td id="Hajj1_mobilegridcell_192" name="mobilegridcell_192" class="Hajj1_mobilegridcell_192"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_193 -->
+                                                                    <td id="Hajj1_mobilegridcell_193" name="mobilegridcell_193" class="Hajj1_mobilegridcell_193"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobiletextinput_195 -->
+                                                                            <div data-role="fieldcontain" class="Hajj1_mobiletextinput_195 ">
+                                                                                <input type="text" name="mobiletextinput_195" dsid="mobiletextinput_195" value=""
+                                                                                placeholder="الوصف" id="Hajj1_mobiletextinput_195" tabindex="22" multiple data-theme="b"
+                                                                                class="Hajj1_mobiletextinput_195" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_194 -->
+                                                                    <td id="Hajj1_mobilegridcell_194" name="mobilegridcell_194" class="Hajj1_mobilegridcell_194"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- mobilegrid_157 -->
+                                    <div class="Hajj1_mobilegrid_157_wrapper" data-wrapper-for="mobilegrid_157">
+                                        <table id="Hajj1_mobilegrid_157" class="Hajj1_mobilegrid_157" dsid="mobilegrid_157"
+                                        name="mobilegrid_157" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_mobilegrid_157_row_0">
+                                                <!-- mobilegridcell_158 -->
+                                                <td id="Hajj1_mobilegridcell_158" name="mobilegridcell_158" class="Hajj1_mobilegridcell_158"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- gmap3 -->
+                                                        <div id="Hajj1_gmap3" dsid="gmap3" name="gmap3" data-role="appery_googlemap" tiggzitype="object"
+                                                        apperytype="object" class='Hajj1_gmap3' style='width:100%;'>
+                                                        </div>
+                                                        <ul data-role="listview" id="Hajj1_gmap3_markers" name="gmap3_markers" dsid="gmap3_markers"
+                                                        style="display:none">
+                                                            <!-- marker_156 -->
+                                                            <li id="Hajj1_marker_156" name="marker_156" dsid="marker_156" tiggzitype="marker"
+                                                            apperytype="marker" rendered="false" latitude="" longitude="" text="Add Components Here"
+                                                            address="San Francisco, CA" show_info="false" style="display:none">
+                                                                <div id="Hajj1_marker_156_infoWindow" name="marker_156_infoWindowContent" class='Hajj1_marker_156'>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Trackpop -->
+            <div data-role="popup" name="Trackpop" dsid="Trackpop" id="Hajj1_Trackpop" class="pop2  Hajj1_Trackpop"
+            data-corners="true" data-dismissible="true" data-overlay-theme="" data-theme="" data-shadow="true"
+            data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- spacer_57 -->
+                    <div id="Hajj1_spacer_57" data-role="appery_spacer" dsid="spacer_57" class='mobilespacer Hajj1_spacer_57'>
+                    </div>
+                    <!-- trackPop -->
+                    <div name="trackPop" id="Hajj1_trackPop" dsid="trackPop" data-role="appery_label"
+                    class="slinev  Hajj1_trackPop">
+                        سيتتبع اعضاء الحملة موقعك من خلال رقم جوالك
+                    </div>
+                    <!-- mobilegrid_59 -->
+                    <div class="Hajj1_mobilegrid_59_wrapper" data-wrapper-for="mobilegrid_59">
+                        <table id="Hajj1_mobilegrid_59" class="Hajj1_mobilegrid_59" dsid="mobilegrid_59"
+                        name="mobilegrid_59" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:224px;" />
+                            <col style="width:auto;" />
+                            <tr class="Hajj1_mobilegrid_59_row_0">
+                                <!-- mobilegridcell_60 -->
+                                <td id="Hajj1_mobilegridcell_60" name="mobilegridcell_60" class="Hajj1_mobilegridcell_60"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_61 -->
+                                <td id="Hajj1_mobilegridcell_61" name="mobilegridcell_61" class="Hajj1_mobilegridcell_61"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- leader_no_input -->
+                                        <div data-role="fieldcontain" class="Hajj1_leader_no_input ">
+                                            <input type="tel" name="leader_no_input" dsid="leader_no_input" value="" placeholder="ضع رقم جوالك (ارقام انجليزية)"
+                                            id="Hajj1_leader_no_input" tabindex="4" multiple data-theme="b" class="Hajj1_leader_no_input"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_64 -->
+                                <td id="Hajj1_mobilegridcell_64" name="mobilegridcell_64" class="Hajj1_mobilegridcell_64"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- mobilegrid_67 -->
+                    <div class="Hajj1_mobilegrid_67_wrapper" data-wrapper-for="mobilegrid_67">
+                        <table id="Hajj1_mobilegrid_67" class="Hajj1_mobilegrid_67" dsid="mobilegrid_67"
+                        name="mobilegrid_67" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:154px;" />
+                            <col style="width:auto;" />
+                            <tr class="Hajj1_mobilegrid_67_row_0">
+                                <!-- mobilegridcell_68 -->
+                                <td id="Hajj1_mobilegridcell_68" name="mobilegridcell_68" class="Hajj1_mobilegridcell_68"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_69 -->
+                                <td id="Hajj1_mobilegridcell_69" name="mobilegridcell_69" class="Hajj1_mobilegridcell_69"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilebutton_74 --><!--
+                                        --><a data-role="button" name="mobilebutton_74" dsid="mobilebutton_74" class="grad3  Hajj1_mobilebutton_74"
+                                        id="Hajj1_mobilebutton_74" data-corners="true" data-icon="navigation" data-iconpos="left"
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="5">
+                                        ابدء
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_72 -->
+                                <td id="Hajj1_mobilegridcell_72" name="mobilegridcell_72" class="Hajj1_mobilegridcell_72"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- spacer_58 -->
+                    <div id="Hajj1_spacer_58" data-role="appery_spacer" dsid="spacer_58" class='mobilespacer Hajj1_spacer_58'>
+                    </div>
+                </div>
+            </div>
+            <!-- smsPOp -->
+            <div data-role="popup" name="smsPOp" dsid="smsPOp" id="Hajj1_smsPOp" class="pop2  Hajj1_smsPOp"
+            data-corners="true" data-dismissible="true" data-overlay-theme="" data-theme="" data-shadow="true"
+            data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- spacer_93 -->
+                    <div id="Hajj1_spacer_93" data-role="appery_spacer" dsid="spacer_93" class='mobilespacer Hajj1_spacer_93'>
+                    </div>
+                    <!-- mobilegrid_96 -->
+                    <div class="Hajj1_mobilegrid_96_wrapper" data-wrapper-for="mobilegrid_96">
+                        <table id="Hajj1_mobilegrid_96" class="Hajj1_mobilegrid_96" dsid="mobilegrid_96"
+                        name="mobilegrid_96" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:264px;" />
+                            <col style="width:auto;" />
+                            <tr class="Hajj1_mobilegrid_96_row_0">
+                                <!-- mobilegridcell_97 -->
+                                <td id="Hajj1_mobilegridcell_97" name="mobilegridcell_97" class="Hajj1_mobilegridcell_97"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_98 -->
+                                <td id="Hajj1_mobilegridcell_98" name="mobilegridcell_98" class="Hajj1_mobilegridcell_98"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- h_msgl -->
+                                        <div data-role="fieldcontain" class="Hajj1_h_msgl ">
+                                            <input type="text" name="h_msgl" dsid="h_msgl" value="" placeholder="ضع رسالتك"
+                                            id="Hajj1_h_msgl" tabindex="8" multiple data-theme="b" class="Hajj1_h_msgl" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_101 -->
+                                <td id="Hajj1_mobilegridcell_101" name="mobilegridcell_101" class="Hajj1_mobilegridcell_101"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- mobilegrid_103 -->
+                    <div class="Hajj1_mobilegrid_103_wrapper" data-wrapper-for="mobilegrid_103">
+                        <table id="Hajj1_mobilegrid_103" class="Hajj1_mobilegrid_103" dsid="mobilegrid_103"
+                        name="mobilegrid_103" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:154px;" />
+                            <col style="width:auto;" />
+                            <tr class="Hajj1_mobilegrid_103_row_0">
+                                <!-- mobilegridcell_104 -->
+                                <td id="Hajj1_mobilegridcell_104" name="mobilegridcell_104" class="Hajj1_mobilegridcell_104"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_105 -->
+                                <td id="Hajj1_mobilegridcell_105" name="mobilegridcell_105" class="Hajj1_mobilegridcell_105"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilebutton_110 --><!--
+                                        --><a data-role="button" name="mobilebutton_110" dsid="mobilebutton_110" class="grad3  Hajj1_mobilebutton_110"
+                                        id="Hajj1_mobilebutton_110" data-corners="true" data-icon="check" data-iconpos="left"
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="9">
+                                        ارسل
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_108 -->
+                                <td id="Hajj1_mobilegridcell_108" name="mobilegridcell_108" class="Hajj1_mobilegridcell_108"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- spacer_94 -->
+                    <div id="Hajj1_spacer_94" data-role="appery_spacer" dsid="spacer_94" class='mobilespacer Hajj1_spacer_94'>
+                    </div>
+                </div>
+            </div>
+            <!-- floowPOP -->
+            <div data-role="popup" name="floowPOP" dsid="floowPOP" id="Hajj1_floowPOP" class="pop2  Hajj1_floowPOP"
+            data-corners="true" data-dismissible="true" data-overlay-theme="" data-theme="" data-shadow="true"
+            data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- spacer_112 -->
+                    <div id="Hajj1_spacer_112" data-role="appery_spacer" dsid="spacer_112" class='mobilespacer Hajj1_spacer_112'>
+                    </div>
+                    <!-- mobilelabel_127 -->
+                    <div name="mobilelabel_127" id="Hajj1_mobilelabel_127" dsid="mobilelabel_127" data-role="appery_label"
+                    class="slinev  Hajj1_mobilelabel_127">
+                        يجب ان يكون قائد الحملة قد فعل خاصية التتبع من خلال التطبيق لكي تتمكن من متابعته
+                    </div>
+                    <!-- mobilelabel_128 -->
+                    <div name="mobilelabel_128" id="Hajj1_mobilelabel_128" dsid="mobilelabel_128" data-role="appery_label"
+                    class="slinev  Hajj1_mobilelabel_128">
+                        سيتم مشاركة موقعك مع قائد الحملة والاعضاء
+                    </div>
+                    <!-- mobilegrid_114 -->
+                    <div class="Hajj1_mobilegrid_114_wrapper" data-wrapper-for="mobilegrid_114">
+                        <table id="Hajj1_mobilegrid_114" class="Hajj1_mobilegrid_114" dsid="mobilegrid_114"
+                        name="mobilegrid_114" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:229px;" />
+                            <col style="width:auto;" />
+                            <tr class="Hajj1_mobilegrid_114_row_0">
+                                <!-- mobilegridcell_115 -->
+                                <td id="Hajj1_mobilegridcell_115" name="mobilegridcell_115" class="Hajj1_mobilegridcell_115"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_116 -->
+                                <td id="Hajj1_mobilegridcell_116" name="mobilegridcell_116" class="Hajj1_mobilegridcell_116"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- f_namef -->
+                                        <div data-role="fieldcontain" class="Hajj1_f_namef ">
+                                            <input type="text" name="f_namef" dsid="f_namef" value="" placeholder="اسمك" id="Hajj1_f_namef"
+                                            tabindex="10" multiple data-theme="b" class="Hajj1_f_namef" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_119 -->
+                                <td id="Hajj1_mobilegridcell_119" name="mobilegridcell_119" class="Hajj1_mobilegridcell_119"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="Hajj1_mobilegrid_114_row_1">
+                                <!-- mobilegridcell_117 -->
+                                <td id="Hajj1_mobilegridcell_117" name="mobilegridcell_117" class="Hajj1_mobilegridcell_117"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_118 -->
+                                <td id="Hajj1_mobilegridcell_118" name="mobilegridcell_118" class="Hajj1_mobilegridcell_118"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- r_mobile -->
+                                        <div data-role="fieldcontain" class="Hajj1_r_mobile ">
+                                            <input type="tel" name="r_mobile" dsid="r_mobile" value="" placeholder="رقم جوالك (ارقام انجليزية)"
+                                            id="Hajj1_r_mobile" tabindex="29" multiple data-theme="b" class="Hajj1_r_mobile"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_120 -->
+                                <td id="Hajj1_mobilegridcell_120" name="mobilegridcell_120" class="Hajj1_mobilegridcell_120"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="Hajj1_mobilegrid_114_row_2">
+                                <!-- mobilegridcell_121 -->
+                                <td id="Hajj1_mobilegridcell_121" name="mobilegridcell_121" class="Hajj1_mobilegridcell_121"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_122 -->
+                                <td id="Hajj1_mobilegridcell_122" name="mobilegridcell_122" class="Hajj1_mobilegridcell_122"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- l_mobilef -->
+                                        <div data-role="fieldcontain" class="Hajj1_l_mobilef ">
+                                            <input type="tel" name="l_mobilef" dsid="l_mobilef" value="" placeholder="رقم جوال قائد الحملة (ارقام انجليزية)"
+                                            id="Hajj1_l_mobilef" tabindex="11" multiple data-theme="b" class="Hajj1_l_mobilef"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_123 -->
+                                <td id="Hajj1_mobilegridcell_123" name="mobilegridcell_123" class="Hajj1_mobilegridcell_123"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="Hajj1_mobilegrid_114_row_3">
+                                <!-- mobilegridcell_259 -->
+                                <td id="Hajj1_mobilegridcell_259" name="mobilegridcell_259" class="Hajj1_mobilegridcell_259"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_260 -->
+                                <td id="Hajj1_mobilegridcell_260" name="mobilegridcell_260" class="Hajj1_mobilegridcell_260"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilebutton_126 --><!--
+                                        --><a data-role="button" name="mobilebutton_126" dsid="mobilebutton_126" class="grad3  Hajj1_mobilebutton_126"
+                                        id="Hajj1_mobilebutton_126" data-corners="true" data-icon="navigation" data-iconpos="left"
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="12">
+                                        ابدء
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_261 -->
+                                <td id="Hajj1_mobilegridcell_261" name="mobilegridcell_261" class="Hajj1_mobilegridcell_261"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- spacer_113 -->
+                    <div id="Hajj1_spacer_113" data-role="appery_spacer" dsid="spacer_113" class='mobilespacer Hajj1_spacer_113'>
+                    </div>
+                </div>
+            </div>
+            <!-- popaddmap1 -->
+            <div data-role="popup" name="popaddmap1" dsid="popaddmap1" id="Hajj1_popaddmap1"
+            class="pop2  Hajj1_popaddmap1" data-corners="true" data-dismissible="false" data-overlay-theme=""
+            data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- spacer_228 -->
+                    <div id="Hajj1_spacer_228" data-role="appery_spacer" dsid="spacer_228" class='mobilespacer Hajj1_spacer_228'>
+                    </div>
+                    <!-- mobilegrid_230 -->
+                    <div class="Hajj1_mobilegrid_230_wrapper" data-wrapper-for="mobilegrid_230">
+                        <table id="Hajj1_mobilegrid_230" class="Hajj1_mobilegrid_230" dsid="mobilegrid_230"
+                        name="mobilegrid_230" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:104px;" />
+                            <col style="width:104px;" />
+                            <col style="width:auto;" />
+                            <tr class="Hajj1_mobilegrid_230_row_0">
+                                <!-- mobilegridcell_231 -->
+                                <td id="Hajj1_mobilegridcell_231" name="mobilegridcell_231" class="Hajj1_mobilegridcell_231"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_232 -->
+                                <td id="Hajj1_mobilegridcell_232" name="mobilegridcell_232" class="Hajj1_mobilegridcell_232"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilebutton_239 --><!--
+                                        --><a data-role="button" name="mobilebutton_239" dsid="mobilebutton_239" class="grad3  Hajj1_mobilebutton_239"
+                                        id="Hajj1_mobilebutton_239" data-corners="true" data-icon="delete" data-iconpos="left"
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="25">
+                                        الغاء
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_235 -->
+                                <td id="Hajj1_mobilegridcell_235" name="mobilegridcell_235" class="Hajj1_mobilegridcell_235"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilebutton_240 --><!--
+                                        --><a data-role="button" name="mobilebutton_240" dsid="mobilebutton_240" class="grad3  Hajj1_mobilebutton_240"
+                                        id="Hajj1_mobilebutton_240" data-corners="true" data-icon="plus" data-iconpos="left"
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="26">
+                                        اضافة 
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_236 -->
+                                <td id="Hajj1_mobilegridcell_236" name="mobilegridcell_236" class="Hajj1_mobilegridcell_236"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- mobilegrid_248 -->
+                    <div class="Hajj1_mobilegrid_248_wrapper" data-wrapper-for="mobilegrid_248">
+                        <table id="Hajj1_mobilegrid_248" class="Hajj1_mobilegrid_248" dsid="mobilegrid_248"
+                        name="mobilegrid_248" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:204px;" />
+                            <col style="width:auto;" />
+                            <tr class="Hajj1_mobilegrid_248_row_0">
+                                <!-- mobilegridcell_249 -->
+                                <td id="Hajj1_mobilegridcell_249" name="mobilegridcell_249" class="Hajj1_mobilegridcell_249"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_250 -->
+                                <td id="Hajj1_mobilegridcell_250" name="mobilegridcell_250" class="Hajj1_mobilegridcell_250"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- locname -->
+                                        <div data-role="fieldcontain" class="Hajj1_locname ">
+                                            <input type="text" name="locname" dsid="locname" value="" placeholder="اسم الموقع"
+                                            id="Hajj1_locname" tabindex="28" multiple data-theme="b" class="Hajj1_locname" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_253 -->
+                                <td id="Hajj1_mobilegridcell_253" name="mobilegridcell_253" class="Hajj1_mobilegridcell_253"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- mobilelabel_312 -->
+                    <div name="mobilelabel_312" id="Hajj1_mobilelabel_312" dsid="mobilelabel_312" data-role="appery_label"
+                    class="slinev  Hajj1_mobilelabel_312">
+                        انقر في الخريطة على المكان المراد اضافته
+                    </div>
+                    <!-- mobilelabel_262 -->
+                    <div name="mobilelabel_262" id="Hajj1_mobilelabel_262" dsid="mobilelabel_262" data-role="appery_label"
+                    class="slinev  Hajj1_mobilelabel_262">
+                        الموقع سيحذف تلقائيا بعد شهر من الاضافة
+                    </div>
+                    <!-- mobilegrid_241 -->
+                    <div class="Hajj1_mobilegrid_241_wrapper" data-wrapper-for="mobilegrid_241">
+                        <table id="Hajj1_mobilegrid_241" class="Hajj1_mobilegrid_241" dsid="mobilegrid_241"
+                        name="mobilegrid_241" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <tr class="Hajj1_mobilegrid_241_row_0">
+                                <!-- mobilegridcell_242 -->
+                                <td id="Hajj1_mobilegridcell_242" name="mobilegridcell_242" class="Hajj1_mobilegridcell_242"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- googlemap_add -->
+                                        <div id="Hajj1_googlemap_add" dsid="googlemap_add" name="googlemap_add" data-role="appery_googlemap"
+                                        tiggzitype="object" apperytype="object" class='Hajj1_googlemap_add' style='width:100%;'>
+                                        </div>
+                                        <ul data-role="listview" id="Hajj1_googlemap_add_markers" name="googlemap_add_markers"
+                                        dsid="googlemap_add_markers" style="display:none">
+                                            <!-- marker_247 -->
+                                            <li id="Hajj1_marker_247" name="marker_247" dsid="marker_247" tiggzitype="marker"
+                                            apperytype="marker" rendered="false" latitude="" longitude="" text="Add Components Here"
+                                            address="San Francisco, CA" show_info="false" style="display:none">
+                                                <div id="Hajj1_marker_247_infoWindow" name="marker_247_infoWindowContent" class='Hajj1_marker_247'>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- spacer_229 -->
+                    <div id="Hajj1_spacer_229" data-role="appery_spacer" dsid="spacer_229" class='mobilespacer Hajj1_spacer_229'>
+                    </div>
+                </div>
+            </div>
+            <!-- panel_2msg -->
+            <div data-role="panel" tabindex="-1" data-position="right" data-display="overlay"
+            id="Hajj1_panel_2msg" class="Hajj1_panel_2msg" name="panel_2msg" dsid="panel_2msg"
+            data-theme="b">
+                <!-- spacer_268 -->
+                <div id="Hajj1_spacer_268" data-role="appery_spacer" dsid="spacer_268" class='mobilespacer Hajj1_spacer_268'>
+                </div>
+                <!-- mobilelabel_269 -->
+                <div name="mobilelabel_269" id="Hajj1_mobilelabel_269" dsid="mobilelabel_269" data-role="appery_label"
+                class="slinewvv  Hajj1_mobilelabel_269">
+                    الرسائل
+                </div>
+                <!-- no_msgs -->
+                <div name="no_msgs" id="Hajj1_no_msgs" dsid="no_msgs" data-role="appery_label" class="Hajj1_no_msgs">
+                </div>
+                <!-- WmsgGrid -->
+                <div class="Hajj1_WmsgGrid_wrapper" data-wrapper-for="WmsgGrid">
+                    <table id="Hajj1_WmsgGrid" class="Hajj1_WmsgGrid" dsid="WmsgGrid" name="WmsgGrid"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:234px;" />
+                        <col style="width:auto;" />
+                        <tr class="Hajj1_WmsgGrid_row_0">
+                            <!-- mobilegridcell_271 -->
+                            <td id="Hajj1_mobilegridcell_271" name="mobilegridcell_271" class="Hajj1_mobilegridcell_271"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_272 -->
+                            <td id="Hajj1_mobilegridcell_272" name="mobilegridcell_272" class="Hajj1_mobilegridcell_272"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- loopmsg -->
+                                    <div class="Hajj1_loopmsg_wrapper" data-wrapper-for="loopmsg">
+                                        <table id="Hajj1_loopmsg" class="Hajj1_loopmsg" dsid="loopmsg" name="loopmsg" cellpadding=0
+                                        cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <tr class="Hajj1_loopmsg_row_0">
+                                                <!-- mobilegridcell_285 -->
+                                                <td id="Hajj1_mobilegridcell_285" name="mobilegridcell_285" class="Hajj1_mobilegridcell_285"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- msg_gggrid -->
+                                                        <div class="Hajj1_msg_gggrid_wrapper" data-wrapper-for="msg_gggrid">
+                                                            <table id="Hajj1_msg_gggrid" class="Hajj1_msg_gggrid" dsid="msg_gggrid" name="msg_gggrid"
+                                                            cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <tr class="Hajj1_msg_gggrid_row_0">
+                                                                    <!-- mobilegridcell_278 -->
+                                                                    <td id="Hajj1_mobilegridcell_278" name="mobilegridcell_278" class="Hajj1_mobilegridcell_278"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- msgd -->
+                                                                            <div name="msgd" id="Hajj1_msgd" dsid="msgd" data-role="appery_label" class="Hajj1_msgd">
+                                                                                Label
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <!-- mobilelabel_283 -->
+                                                        <div name="mobilelabel_283" id="Hajj1_mobilelabel_283" dsid="mobilelabel_283" data-role="appery_label"
+                                                        class="Hajj1_mobilelabel_283">
+                                                            Label
+                                                        </div>
+                                                        <!-- msg_id_delete -->
+                                                        <div name="msg_id_delete" id="Hajj1_msg_id_delete" dsid="msg_id_delete" data-role="appery_label"
+                                                        class="Hajj1_msg_id_delete">
+                                                            Label
+                                                        </div>
+                                                        <!-- show_delete_g -->
+                                                        <div class="Hajj1_show_delete_g_wrapper" data-wrapper-for="show_delete_g">
+                                                            <table id="Hajj1_show_delete_g" class="Hajj1_show_delete_g" dsid="show_delete_g"
+                                                            name="show_delete_g" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <tr class="Hajj1_show_delete_g_row_0">
+                                                                    <!-- mobilegridcell_314 -->
+                                                                    <td id="Hajj1_mobilegridcell_314" name="mobilegridcell_314" class="Hajj1_mobilegridcell_314"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- Deletemobilegrid_289 -->
+                                                                            <div class="Hajj1_Deletemobilegrid_289_wrapper" data-wrapper-for="Deletemobilegrid_289">
+                                                                                <table id="Hajj1_Deletemobilegrid_289" class="Hajj1_Deletemobilegrid_289" dsid="Deletemobilegrid_289"
+                                                                                name="Deletemobilegrid_289" cellpadding=0 cellspacing=0>
+                                                                                    <col style="width:auto;" />
+                                                                                    <col style="width:32px;" />
+                                                                                    <col style="width:auto;" />
+                                                                                    <tr class="Hajj1_Deletemobilegrid_289_row_0">
+                                                                                        <!-- mobilegridcell_290 -->
+                                                                                        <td id="Hajj1_mobilegridcell_290" name="mobilegridcell_290" class="Hajj1_mobilegridcell_290"
+                                                                                        colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <!-- mobilegridcell_291 -->
+                                                                                        <td id="Hajj1_mobilegridcell_291" name="mobilegridcell_291" class="Hajj1_mobilegridcell_291"
+                                                                                        colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <!-- mobilebutton_296 --><!--
+                                                                                                --><a data-role="button" name="mobilebutton_296" dsid="mobilebutton_296" class="grad3  Hajj1_mobilebutton_296"
+                                                                                                style='min-height:20px; ' id="Hajj1_mobilebutton_296" data-corners="true" data-icon="delete"
+                                                                                                data-iconpos="notext" x-apple-data-detectors="false" data-mini="true" data-theme="b"
+                                                                                                tabindex="31">
+                                                                                                Button
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <!-- mobilegridcell_294 -->
+                                                                                        <td id="Hajj1_mobilegridcell_294" name="mobilegridcell_294" class="Hajj1_mobilegridcell_294"
+                                                                                        colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_275 -->
+                            <td id="Hajj1_mobilegridcell_275" name="mobilegridcell_275" class="Hajj1_mobilegridcell_275"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- delete_pop -->
+            <div data-role="popup" name="delete_pop" dsid="delete_pop" id="Hajj1_delete_pop"
+            class="pop2  Hajj1_delete_pop" data-corners="true" data-dismissible="true" data-overlay-theme=""
+            data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- spacer_298 -->
+                    <div id="Hajj1_spacer_298" data-role="appery_spacer" dsid="spacer_298" class='mobilespacer Hajj1_spacer_298'>
+                    </div>
+                    <!-- mobilelabel_300 -->
+                    <div name="mobilelabel_300" id="Hajj1_mobilelabel_300" dsid="mobilelabel_300" data-role="appery_label"
+                    class="Hajj1_mobilelabel_300">
+                        هل تريد حذف الموقع؟
+                    </div>
+                    <!-- mobilegrid_301 -->
+                    <div class="Hajj1_mobilegrid_301_wrapper" data-wrapper-for="mobilegrid_301">
+                        <table id="Hajj1_mobilegrid_301" class="Hajj1_mobilegrid_301" dsid="mobilegrid_301"
+                        name="mobilegrid_301" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:94px;" />
+                            <col style="width:94px;" />
+                            <col style="width:auto;" />
+                            <tr class="Hajj1_mobilegrid_301_row_0">
+                                <!-- mobilegridcell_302 -->
+                                <td id="Hajj1_mobilegridcell_302" name="mobilegridcell_302" class="Hajj1_mobilegridcell_302"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_303 -->
+                                <td id="Hajj1_mobilegridcell_303" name="mobilegridcell_303" class="Hajj1_mobilegridcell_303"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilebutton_310 --><!--
+                                        --><a data-role="button" name="mobilebutton_310" dsid="mobilebutton_310" class="grad3  Hajj1_mobilebutton_310"
+                                        id="Hajj1_mobilebutton_310" data-corners="true" data-icon="delete" data-iconpos="left"
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="32">
+                                        لا
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_306 -->
+                                <td id="Hajj1_mobilegridcell_306" name="mobilegridcell_306" class="Hajj1_mobilegridcell_306"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilebutton_311 --><!--
+                                        --><a data-role="button" name="mobilebutton_311" dsid="mobilebutton_311" class="grad3  Hajj1_mobilebutton_311"
+                                        id="Hajj1_mobilebutton_311" data-corners="true" data-icon="check" data-iconpos="left"
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="33">
+                                        نعم
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_307 -->
+                                <td id="Hajj1_mobilegridcell_307" name="mobilegridcell_307" class="Hajj1_mobilegridcell_307"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- spacer_299 -->
+                    <div id="Hajj1_spacer_299" data-role="appery_spacer" dsid="spacer_299" class='mobilespacer Hajj1_spacer_299'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

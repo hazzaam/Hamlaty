@@ -1,0 +1,90 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Insomnia\"><param name=\"ios-package\" value=\"Insomnia\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ],
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreLocation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string>Your location information will be used by this app. Choose \"Allow\" so the app can provide location services.</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.appery.hamlaty"
+        },
+        "cordova-plugin-insomnia": {
+            "PACKAGE_NAME": "io.appery.hamlaty"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.appery.hamlaty"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "io.appery.hamlaty"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.appery.hamlaty"
+        },
+        "cordova-plugin-geolocation": {
+            "LOCATION_IN_USE_USAGE_DESCRIPTION": "Your location information will be used by this app. Choose \"Allow\" so the app can provide location services.",
+            "PACKAGE_NAME": "io.appery.hamlaty"
+        }
+    },
+    "dependent_plugins": {}
+}

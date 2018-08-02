@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Tracking2Page
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/CSS1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/newCSS.css" />
+        <link type="text/css" rel="stylesheet" href="../css/HajjCSS.css" />
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../libs/cordova.js">
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript5.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript6.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript2.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript4.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript1.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper2.js">
+        </script>
+        <script type="text/javascript" src="../js/Hajj1js.js">
+        </script>
+        <script type="text/javascript" src="../js/hajj_JavaScript1.js">
+        </script>
+        <script type="text/javascript" src="../js/hajj2js.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery-ui-youtube/jquery.ui.youtube.js">
+        </script>
+        <script type="text/javascript" src="https://www.youtube.com/iframe_api">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Tracking2Page" id="Tracking2Page"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="Tracking2Page_mobileheader" class="mobileh  Tracking2Page_mobileheader">
+                <h1 dsid="mobileheader">
+                    مباشر
+                </h1>
+                <!-- mobilebutton_168 --><!--
+                --><a data-role="button" name="mobilebutton_168" dsid="mobilebutton_168" class="b2233x  Tracking2Page_mobilebutton_168 ui-btn-left"
+                id="Tracking2Page_mobilebutton_168" data-corners="true" data-icon="carat-l" data-iconpos="left"
+                x-apple-data-detectors="false" data-inline='true' data-mini='true' data-theme="a"
+                tabindex="8">
+                تعديل
+                </a><!--
+                --><!-- mobilebutton_154 --><!--
+                --><a data-role="button" name="mobilebutton_154" dsid="mobilebutton_154" class="b2233x  Tracking2Page_mobilebutton_154 ui-btn-right"
+                id="Tracking2Page_mobilebutton_154" data-corners="true" data-icon="home" data-iconpos="right"
+                x-apple-data-detectors="false" data-inline='true' data-mini='true' data-theme="a"
+                tabindex="6">
+                الرئيسية
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Tracking2Page_mobilecontainer" name="mobilecontainer"
+            class="r_back  Tracking2Page_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <link href="Tracking2Page.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Tracking2Page.js">
+                </script>
+                <!-- mobilegrid_257 -->
+                <div class="Tracking2Page_mobilegrid_257_wrapper" data-wrapper-for="mobilegrid_257">
+                    <table id="Tracking2Page_mobilegrid_257" class="Tracking2Page_mobilegrid_257" dsid="mobilegrid_257"
+                    name="mobilegrid_257" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:54px;" />
+                        <col style="width:auto;" />
+                        <tr class="Tracking2Page_mobilegrid_257_row_0">
+                            <!-- mobilegridcell_258 -->
+                            <td id="Tracking2Page_mobilegridcell_258" name="mobilegridcell_258" class="Tracking2Page_mobilegridcell_258"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_262 -->
+                            <td id="Tracking2Page_mobilegridcell_262" name="mobilegridcell_262" class="Tracking2Page_mobilegridcell_262"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_266 --><!--
+                                    --><a data-role="button" name="mobilebutton_266" dsid="mobilebutton_266" class="btn1x  Tracking2Page_mobilebutton_266"
+                                    style='min-height:20px; ' id="Tracking2Page_mobilebutton_266" data-corners="true"
+                                    data-icon="refresh" data-iconpos="notext" x-apple-data-detectors="false" data-mini="true"
+                                    data-theme="a" tabindex="13">
+                                    &nbsp;
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_263 -->
+                            <td id="Tracking2Page_mobilegridcell_263" name="mobilegridcell_263" class="Tracking2Page_mobilegridcell_263"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobileshow -->
+                <div name="mobileshow" id="Tracking2Page_mobileshow" dsid="mobileshow" data-role="appery_label"
+                class="Tracking2Page_mobileshow">
+                </div>
+                <!-- mobilegrid_169 -->
+                <div class="Tracking2Page_mobilegrid_169_wrapper" data-wrapper-for="mobilegrid_169">
+                    <table id="Tracking2Page_mobilegrid_169" class="Tracking2Page_mobilegrid_169" dsid="mobilegrid_169"
+                    name="mobilegrid_169" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:126px;" />
+                        <col style="width:auto;" />
+                        <tr class="Tracking2Page_mobilegrid_169_row_0">
+                            <!-- mobilegridcell_170 -->
+                            <td id="Tracking2Page_mobilegridcell_170" name="mobilegridcell_170" class="Tracking2Page_mobilegridcell_170"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_171 -->
+                            <td id="Tracking2Page_mobilegridcell_171" name="mobilegridcell_171" class="Tracking2Page_mobilegridcell_171"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- tmsg --><!--
+                                    --><a data-role="button" name="tmsg" dsid="tmsg" class="b2233  Tracking2Page_tmsg"
+                                    id="Tracking2Page_tmsg" data-corners="true" data-icon="mail" data-iconpos="right"
+                                    x-apple-data-detectors="false" data-mini="true" data-theme="a" tabindex="9">
+                                    (0) الرسائل
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_174 -->
+                            <td id="Tracking2Page_mobilegridcell_174" name="mobilegridcell_174" class="Tracking2Page_mobilegridcell_174"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- errormsg -->
+                <div name="errormsg" id="Tracking2Page_errormsg" dsid="errormsg" data-role="appery_label"
+                class="Tracking2Page_errormsg">
+                    :( نأسف يوجد خطأ
+                </div>
+                <!-- totaltrackgrid -->
+                <div class="Tracking2Page_totaltrackgrid_wrapper" data-wrapper-for="totaltrackgrid">
+                    <table id="Tracking2Page_totaltrackgrid" class="totx  Tracking2Page_totaltrackgrid"
+                    dsid="totaltrackgrid" name="totaltrackgrid" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:100%;" />
+                        <col style="width:auto;" />
+                        <tr class="Tracking2Page_totaltrackgrid_row_0">
+                            <!-- mobilegridcell_156 -->
+                            <td id="Tracking2Page_mobilegridcell_156" name="mobilegridcell_156" class="Tracking2Page_mobilegridcell_156"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- totaltrackgridx -->
+                            <td id="Tracking2Page_totaltrackgridx" name="totaltrackgridx" class="Tracking2Page_totaltrackgridx"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- TrackingGrid_60 -->
+                                    <div class="Tracking2Page_TrackingGrid_60_wrapper" data-wrapper-for="TrackingGrid_60">
+                                        <table id="Tracking2Page_TrackingGrid_60" class="totx  Tracking2Page_TrackingGrid_60"
+                                        dsid="TrackingGrid_60" name="TrackingGrid_60" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <tr class="Tracking2Page_TrackingGrid_60_row_0">
+                                                <!-- griddd_61 -->
+                                                <td id="Tracking2Page_griddd_61" name="griddd_61" class="Tracking2Page_griddd_61"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilegrid_2_62 -->
+                                                        <div class="Tracking2Page_mobilegrid_2_62_wrapper" data-wrapper-for="mobilegrid_2_62">
+                                                            <table id="Tracking2Page_mobilegrid_2_62" class="Tracking2Page_mobilegrid_2_62"
+                                                            dsid="mobilegrid_2_62" name="mobilegrid_2_62" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <col style="width:auto;" />
+                                                                <tr class="Tracking2Page_mobilegrid_2_62_row_0">
+                                                                    <!-- mobilegridcell_3_63 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_3_63" name="mobilegridcell_3_63" class="Tracking2Page_mobilegridcell_3_63"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- currentspeed_64 -->
+                                                                            <div name="currentspeed_64" id="Tracking2Page_currentspeed_64" dsid="currentspeed_64"
+                                                                            data-role="appery_label" class="Tracking2Page_currentspeed_64">
+                                                                            </div>
+                                                                            <!-- speed_label -->
+                                                                            <div name="speed_label" id="Tracking2Page_speed_label" dsid="speed_label" data-role="appery_label"
+                                                                            class="Tracking2Page_speed_label">
+                                                                                Label
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_4_65 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_4_65" name="mobilegridcell_4_65" class="Tracking2Page_mobilegridcell_4_65"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_11_66 -->
+                                                                            <div name="mobilelabel_11_66" id="Tracking2Page_mobilelabel_11_66" dsid="mobilelabel_11_66"
+                                                                            data-role="appery_label" class="Tracking2Page_mobilelabel_11_66">
+                                                                                (السرعة الحالية (كم\س
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="Tracking2Page_mobilegrid_2_62_row_1">
+                                                                    <!-- mobilegridcell_5_67 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_5_67" name="mobilegridcell_5_67" class="Tracking2Page_mobilegridcell_5_67"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- currentadd_125 -->
+                                                                            <div name="currentadd_125" id="Tracking2Page_currentadd_125" dsid="currentadd_125"
+                                                                            data-role="appery_label" class="Tracking2Page_currentadd_125">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_6_122 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_6_122" name="mobilegridcell_6_122" class="Tracking2Page_mobilegridcell_6_122"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_13_127 -->
+                                                                            <div name="mobilelabel_13_127" id="Tracking2Page_mobilelabel_13_127" dsid="mobilelabel_13_127"
+                                                                            data-role="appery_label" class="Tracking2Page_mobilelabel_13_127">
+                                                                                العنوان الحالي
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="Tracking2Page_mobilegrid_2_62_row_2">
+                                                                    <!-- mobilegridcell_7_124 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_7_124" name="mobilegridcell_7_124" class="Tracking2Page_mobilegridcell_7_124"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilegrid_18_129 -->
+                                                                            <div class="Tracking2Page_mobilegrid_18_129_wrapper" data-wrapper-for="mobilegrid_18_129">
+                                                                                <table id="Tracking2Page_mobilegrid_18_129" class="Tracking2Page_mobilegrid_18_129"
+                                                                                dsid="mobilegrid_18_129" name="mobilegrid_18_129" cellpadding=0 cellspacing=0>
+                                                                                    <col style="width:29px;" />
+                                                                                    <col style="width:auto;" />
+                                                                                    <tr class="Tracking2Page_mobilegrid_18_129_row_0">
+                                                                                        <!-- mobilegridcell_19_130 -->
+                                                                                        <td id="Tracking2Page_mobilegridcell_19_130" name="mobilegridcell_19_130" class="Tracking2Page_mobilegridcell_19_130"
+                                                                                        colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <!-- mobilelabel_25_131 -->
+                                                                                                <div name="mobilelabel_25_131" id="Tracking2Page_mobilelabel_25_131" dsid="mobilelabel_25_131"
+                                                                                                data-role="appery_label" class="Tracking2Page_mobilelabel_25_131">
+                                                                                                    x:
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <!-- mobilegridcell_20_132 -->
+                                                                                        <td id="Tracking2Page_mobilegridcell_20_132" name="mobilegridcell_20_132" class="Tracking2Page_mobilegridcell_20_132"
+                                                                                        colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <!-- coorx_133 -->
+                                                                                                <div name="coorx_133" id="Tracking2Page_coorx_133" dsid="coorx_133" data-role="appery_label"
+                                                                                                class="Tracking2Page_coorx_133">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="Tracking2Page_mobilegrid_18_129_row_1">
+                                                                                        <!-- mobilegridcell_21_134 -->
+                                                                                        <td id="Tracking2Page_mobilegridcell_21_134" name="mobilegridcell_21_134" class="Tracking2Page_mobilegridcell_21_134"
+                                                                                        colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <!-- mobilelabel_26_135 -->
+                                                                                                <div name="mobilelabel_26_135" id="Tracking2Page_mobilelabel_26_135" dsid="mobilelabel_26_135"
+                                                                                                data-role="appery_label" class="Tracking2Page_mobilelabel_26_135">
+                                                                                                    Y:
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <!-- mobilegridcell_22_136 -->
+                                                                                        <td id="Tracking2Page_mobilegridcell_22_136" name="mobilegridcell_22_136" class="Tracking2Page_mobilegridcell_22_136"
+                                                                                        colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <!-- coory_137 -->
+                                                                                                <div name="coory_137" id="Tracking2Page_coory_137" dsid="coory_137" data-role="appery_label"
+                                                                                                class="Tracking2Page_coory_137">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_8_126 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_8_126" name="mobilegridcell_8_126" class="Tracking2Page_mobilegridcell_8_126"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_14_139 -->
+                                                                            <div name="mobilelabel_14_139" id="Tracking2Page_mobilelabel_14_139" dsid="mobilelabel_14_139"
+                                                                            data-role="appery_label" class="Tracking2Page_mobilelabel_14_139">
+                                                                                الإحداثيات
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="Tracking2Page_mobilegrid_2_62_row_3">
+                                                                    <!-- mobilegridcell_288 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_288" name="mobilegridcell_288" class="Tracking2Page_mobilegridcell_288"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- distanceDelta -->
+                                                                            <div name="distanceDelta" id="Tracking2Page_distanceDelta" dsid="distanceDelta"
+                                                                            data-role="appery_label" class="Tracking2Page_distanceDelta">
+                                                                                0
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_289 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_289" name="mobilegridcell_289" class="Tracking2Page_mobilegridcell_289"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_290 -->
+                                                                            <div name="mobilelabel_290" id="Tracking2Page_mobilelabel_290" dsid="mobilelabel_290"
+                                                                            data-role="appery_label" class="Tracking2Page_mobilelabel_290">
+                                                                                (المسافة المقطوعة (كم
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <!-- mobilegrid_49_140 -->
+                                                        <div class="Tracking2Page_mobilegrid_49_140_wrapper" data-wrapper-for="mobilegrid_49_140">
+                                                            <table id="Tracking2Page_mobilegrid_49_140" class="Tracking2Page_mobilegrid_49_140"
+                                                            dsid="mobilegrid_49_140" name="mobilegrid_49_140" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <tr class="Tracking2Page_mobilegrid_49_140_row_0">
+                                                                    <!-- mobilegridcell_50_141 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_50_141" name="mobilegridcell_50_141" class="Tracking2Page_mobilegridcell_50_141"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilebutton_33_142 --><!--
+                                                                            --><a data-role="button" name="mobilebutton_33_142" dsid="mobilebutton_33_142" class="btn1  Tracking2Page_mobilebutton_33_142"
+                                                                            id="Tracking2Page_mobilebutton_33_142" data-corners="true" data-icon="location" data-iconpos="left"
+                                                                            x-apple-data-detectors="false" data-mini="true" data-theme="f" tabindex="2">
+                                                                            تكبير الخريطة
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="Tracking2Page_mobilegrid_49_140_row_1">
+                                                                    <!-- mobilegridcell_52_143 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_52_143" name="mobilegridcell_52_143" class="Tracking2Page_mobilegridcell_52_143"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilebutton_32_144 --><!--
+                                                                            --><a data-role="button" name="mobilebutton_32_144" dsid="mobilebutton_32_144" class="btn1  Tracking2Page_mobilebutton_32_144"
+                                                                            id="Tracking2Page_mobilebutton_32_144" data-corners="true" data-icon="forbidden"
+                                                                            data-iconpos="left" x-apple-data-detectors="false" data-mini="true" data-theme="f"
+                                                                            tabindex="1">
+                                                                            إيقاف السماح للآخرين من تتبعك
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="Tracking2Page_mobilegrid_49_140_row_2">
+                                                                    <!-- mobilegridcell_165 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_165" name="mobilegridcell_165" class="Tracking2Page_mobilegridcell_165"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilebutton_166 --><!--
+                                                                            --><a data-role="button" name="mobilebutton_166" dsid="mobilebutton_166" class="btn1  Tracking2Page_mobilebutton_166"
+                                                                            id="Tracking2Page_mobilebutton_166" data-corners="true" data-icon="comment" data-iconpos="left"
+                                                                            x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="7">
+                                                                            أرسل رسالة للشخص الذي يتتبعك
+                                                                            </a><!--
+                                                                            --><!-- mobilegrid_41_149 -->
+                                                                            <div class="Tracking2Page_mobilegrid_41_149_wrapper" data-wrapper-for="mobilegrid_41_149">
+                                                                                <table id="Tracking2Page_mobilegrid_41_149" class="Tracking2Page_mobilegrid_41_149"
+                                                                                dsid="mobilegrid_41_149" name="mobilegrid_41_149" cellpadding=0 cellspacing=0>
+                                                                                    <col style="width:auto;" />
+                                                                                    <tr class="Tracking2Page_mobilegrid_41_149_row_0">
+                                                                                        <!-- mobilegridcell_42_150 -->
+                                                                                        <td id="Tracking2Page_mobilegridcell_42_150" name="mobilegridcell_42_150" class="Tracking2Page_mobilegridcell_42_150"
+                                                                                        colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <!-- spacer_167 -->
+                                                                                                <div id="Tracking2Page_spacer_167" data-role="appery_spacer" dsid="spacer_167" class='mobilespacer Tracking2Page_spacer_167'>
+                                                                                                </div>
+                                                                                                <!-- sendText_152x -->
+                                                                                                <div data-role="fieldcontain" class="Tracking2Page_sendText_152x ">
+                                                                                                    <input type="text" name="sendText_152x" dsid="sendText_152x" value="" placeholder="ضع رسالتك هنا"
+                                                                                                    id="Tracking2Page_sendText_152x" tabindex="4" multiple data-theme="f" class="Tracking2Page_sendText_152x"
+                                                                                                    />
+                                                                                                </div>
+                                                                                                <!-- spacer_163 -->
+                                                                                                <div id="Tracking2Page_spacer_163" data-role="appery_spacer" dsid="spacer_163" class='mobilespacer Tracking2Page_spacer_163'>
+                                                                                                </div>
+                                                                                                <!-- mobilebutton_48_153 --><!--
+                                                                                                --><a data-role="button" name="mobilebutton_48_153" dsid="mobilebutton_48_153" class="btn1  Tracking2Page_mobilebutton_48_153"
+                                                                                                id="Tracking2Page_mobilebutton_48_153" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                                                                                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="5">
+                                                                                                أرسل
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <!-- msgfb -->
+                                                        <div name="msgfb" id="Tracking2Page_msgfb" dsid="msgfb" data-role="appery_label"
+                                                        class="Tracking2Page_msgfb">
+                                                        </div>
+                                                        <!-- spacer_164 -->
+                                                        <div id="Tracking2Page_spacer_164" data-role="appery_spacer" dsid="spacer_164" class='mobilespacer Tracking2Page_spacer_164'>
+                                                        </div>
+                                                        <!-- mobilegrid_267_276 -->
+                                                        <div class="Tracking2Page_mobilegrid_267_276_wrapper" data-wrapper-for="mobilegrid_267_276">
+                                                            <table id="Tracking2Page_mobilegrid_267_276" class="Tracking2Page_mobilegrid_267_276"
+                                                            dsid="mobilegrid_267_276" name="mobilegrid_267_276" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <col style="width:174px;" />
+                                                                <col style="width:auto;" />
+                                                                <tr class="Tracking2Page_mobilegrid_267_276_row_0">
+                                                                    <!-- mobilegridcell_268_277 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_268_277" name="mobilegridcell_268_277" class="Tracking2Page_mobilegridcell_268_277"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_269_278 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_269_278" name="mobilegridcell_269_278" class="Tracking2Page_mobilegridcell_269_278"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilebutton_274_279 --><!--
+                                                                            --><a data-role="button" name="mobilebutton_274_279" dsid="mobilebutton_274_279" class="b2233  Tracking2Page_mobilebutton_274_279"
+                                                                            id="Tracking2Page_mobilebutton_274_279" data-corners="true" data-icon="location"
+                                                                            data-iconpos="left" x-apple-data-detectors="false" data-mini="true" data-theme="a"
+                                                                            tabindex="14">
+                                                                            ضبط المركز و الإتجاه
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_272_280 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_272_280" name="mobilegridcell_272_280" class="Tracking2Page_mobilegridcell_272_280"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <!-- mobilegrid_34_145 -->
+                                                        <div class="Tracking2Page_mobilegrid_34_145_wrapper" data-wrapper-for="mobilegrid_34_145">
+                                                            <table id="Tracking2Page_mobilegrid_34_145" class="Tracking2Page_mobilegrid_34_145"
+                                                            dsid="mobilegrid_34_145" name="mobilegrid_34_145" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <tr class="Tracking2Page_mobilegrid_34_145_row_0">
+                                                                    <!-- mobilegridcell_35_146 -->
+                                                                    <td id="Tracking2Page_mobilegridcell_35_146" name="mobilegridcell_35_146" class="Tracking2Page_mobilegridcell_35_146"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- gmap1 -->
+                                                                            <div id="Tracking2Page_gmap1" dsid="gmap1" name="gmap1" data-role="appery_googlemap"
+                                                                            tiggzitype="object" apperytype="object" class='Tracking2Page_gmap1' style='width:100%;'>
+                                                                            </div>
+                                                                            <ul data-role="listview" id="Tracking2Page_gmap1_markers" name="gmap1_markers" dsid="gmap1_markers"
+                                                                            style="display:none">
+                                                                                <!-- marker_40_148 -->
+                                                                                <li id="Tracking2Page_marker_40_148" name="marker_40_148" dsid="marker_40_148" tiggzitype="marker"
+                                                                                apperytype="marker" rendered="false" latitude="" longitude="" text="" address=""
+                                                                                show_info="false" style="display:none">
+                                                                                    <div id="Tracking2Page_marker_40_148_infoWindow" name="marker_40_148_infoWindowContent"
+                                                                                    class='Tracking2Page_marker_40_148'>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <!-- spacer_162 -->
+                                                        <div id="Tracking2Page_spacer_162" data-role="appery_spacer" dsid="spacer_162" class='mobilespacer Tracking2Page_spacer_162'>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_160 -->
+                            <td id="Tracking2Page_mobilegridcell_160" name="mobilegridcell_160" class="Tracking2Page_mobilegridcell_160"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="mobileh  Tracking2Page_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="Tracking2Page_mobilefooter" data-theme="f">
+            </div>
+            <!-- panel_175 -->
+            <div data-role="panel" tabindex="-1" data-position="right" data-display="push" id="Tracking2Page_panel_175"
+            class="m-back  Tracking2Page_panel_175" name="panel_175" dsid="panel_175" data-theme="f">
+                <!-- spacer_176 -->
+                <div id="Tracking2Page_spacer_176" data-role="appery_spacer" dsid="spacer_176" class='mobilespacer Tracking2Page_spacer_176'>
+                </div>
+                <!-- mobilelabel_256 -->
+                <div name="mobilelabel_256" id="Tracking2Page_mobilelabel_256" dsid="mobilelabel_256"
+                data-role="appery_label" class="Tracking2Page_mobilelabel_256">
+                    الرسائل سوف تحذف بعد مرور 24 ساعة عليها
+                </div>
+                <!-- nomsgs -->
+                <div name="nomsgs" id="Tracking2Page_nomsgs" dsid="nomsgs" data-role="appery_label"
+                class="Tracking2Page_nomsgs">
+                </div>
+                <!-- loopmsg_236 -->
+                <div class="Tracking2Page_loopmsg_236_wrapper" data-wrapper-for="loopmsg_236">
+                    <table id="Tracking2Page_loopmsg_236" class="Tracking2Page_loopmsg_236" dsid="loopmsg_236"
+                    name="loopmsg_236" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Tracking2Page_loopmsg_236_row_0">
+                            <!-- mobilegridcell_228_237 -->
+                            <td id="Tracking2Page_mobilegridcell_228_237" name="mobilegridcell_228_237" class="Tracking2Page_mobilegridcell_228_237"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilecollapsblock_206_238 -->
+                                    <div data-role="collapsible" id="Tracking2Page_mobilecollapsblock_206_238" name="mobilecollapsblock_206_238"
+                                    dsid="mobilecollapsblock_206_238" data-collapsed="true" data-theme="e" data-content-theme="e"
+                                    data-iconpos='left' class="Tracking2Page_mobilecollapsblock_206_238">
+                                        <h3 id="Tracking2Page_mobilecollapsblockheader_207_239" name="mobilecollapsblockheader_207_239"
+                                        dsid="mobilecollapsblockheader_207_239">
+                                            <!-- mobilegrid_209_240 -->
+                                            <div class="Tracking2Page_mobilegrid_209_240_wrapper" data-wrapper-for="mobilegrid_209_240">
+                                                <table id="Tracking2Page_mobilegrid_209_240" class="Tracking2Page_mobilegrid_209_240"
+                                                dsid="mobilegrid_209_240" name="mobilegrid_209_240" cellpadding=0 cellspacing=0>
+                                                    <col style="width:auto;" />
+                                                    <tr class="Tracking2Page_mobilegrid_209_240_row_0">
+                                                        <!-- mobilegridcell_210_241 -->
+                                                        <td id="Tracking2Page_mobilegridcell_210_241" name="mobilegridcell_210_241" class="Tracking2Page_mobilegridcell_210_241"
+                                                        colspan=1 rowspan=1>
+                                                            <div class="cell-wrapper">
+                                                                <!-- msgname_242 -->
+                                                                <div name="msgname_242" id="Tracking2Page_msgname_242" dsid="msgname_242" data-role="appery_label"
+                                                                class="Tracking2Page_msgname_242">
+                                                                    Label
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="Tracking2Page_mobilegrid_209_240_row_1">
+                                                        <!-- mobilegridcell_212_243 -->
+                                                        <td id="Tracking2Page_mobilegridcell_212_243" name="mobilegridcell_212_243" class="Tracking2Page_mobilegridcell_212_243"
+                                                        colspan=1 rowspan=1>
+                                                            <div class="cell-wrapper">
+                                                                <!-- msgmobile_244 -->
+                                                                <div name="msgmobile_244" id="Tracking2Page_msgmobile_244" dsid="msgmobile_244"
+                                                                data-role="appery_label" class="Tracking2Page_msgmobile_244">
+                                                                    Label
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <!-- msgtime2_245 -->
+                                            <div name="msgtime2_245" id="Tracking2Page_msgtime2_245" dsid="msgtime2_245" data-role="appery_label"
+                                            class="Tracking2Page_msgtime2_245">
+                                                Label
+                                            </div>
+                                        </h3>
+                                        <!-- mobilegrid_216_247 -->
+                                        <div class="Tracking2Page_mobilegrid_216_247_wrapper" data-wrapper-for="mobilegrid_216_247">
+                                            <table id="Tracking2Page_mobilegrid_216_247" class="Tracking2Page_mobilegrid_216_247"
+                                            dsid="mobilegrid_216_247" name="mobilegrid_216_247" cellpadding=0 cellspacing=0>
+                                                <col style="width:auto;" />
+                                                <tr class="Tracking2Page_mobilegrid_216_247_row_0">
+                                                    <!-- mobilegridcell_217_248 -->
+                                                    <td id="Tracking2Page_mobilegridcell_217_248" name="mobilegridcell_217_248" class="Tracking2Page_mobilegridcell_217_248"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- msgtext_249 -->
+                                                            <div name="msgtext_249" id="Tracking2Page_msgtext_249" dsid="msgtext_249" data-role="appery_label"
+                                                            class="Tracking2Page_msgtext_249">
+                                                                Label
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!-- msgdate_251 -->
+                                        <div name="msgdate_251" id="Tracking2Page_msgdate_251" dsid="msgdate_251" data-role="appery_label"
+                                        class="Tracking2Page_msgdate_251">
+                                            Label
+                                        </div>
+                                        <!-- msgtime_252 -->
+                                        <div name="msgtime_252" id="Tracking2Page_msgtime_252" dsid="msgtime_252" data-role="appery_label"
+                                        class="Tracking2Page_msgtime_252">
+                                            Label
+                                        </div>
+                                        <!-- msgid -->
+                                        <div name="msgid" id="Tracking2Page_msgid" dsid="msgid" data-role="appery_label"
+                                        class="Tracking2Page_msgid">
+                                        </div>
+                                        <!-- mobilegrid_281 -->
+                                        <div class="Tracking2Page_mobilegrid_281_wrapper" data-wrapper-for="mobilegrid_281">
+                                            <table id="Tracking2Page_mobilegrid_281" class="Tracking2Page_mobilegrid_281" dsid="mobilegrid_281"
+                                            name="mobilegrid_281" cellpadding=0 cellspacing=0>
+                                                <col style="width:auto;" />
+                                                <col style="width:124px;" />
+                                                <col style="width:auto;" />
+                                                <tr class="Tracking2Page_mobilegrid_281_row_0">
+                                                    <!-- mobilegridcell_282 -->
+                                                    <td id="Tracking2Page_mobilegridcell_282" name="mobilegridcell_282" class="Tracking2Page_mobilegridcell_282"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_283 -->
+                                                    <td id="Tracking2Page_mobilegridcell_283" name="mobilegridcell_283" class="Tracking2Page_mobilegridcell_283"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilebutton_287 --><!--
+                                                            --><a data-role="button" name="mobilebutton_287" dsid="mobilebutton_287" class="Tracking2Page_mobilebutton_287"
+                                                            id="Tracking2Page_mobilebutton_287" data-corners="true" data-icon="phone" data-iconpos="left"
+                                                            x-apple-data-detectors="false" data-mini="true" data-theme="a" tabindex="15">
+                                                            أتصال
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_286 -->
+                                                    <td id="Tracking2Page_mobilegridcell_286" name="mobilegridcell_286" class="Tracking2Page_mobilegridcell_286"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- spacer_232_255 -->
+                                    <div id="Tracking2Page_spacer_232_255" data-role="appery_spacer" dsid="spacer_232_255"
+                                    class='mobilespacer Tracking2Page_spacer_232_255'>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

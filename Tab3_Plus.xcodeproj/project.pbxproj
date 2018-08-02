@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E7B74B86A44298846B064D /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CA813836F9CA4989971FB649 /* CDVViewController+SplashScreen.m */; };
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		4F889D39A6AD4A458235B354 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27FD607A502E4D59B1A24DCE /* CDVNotification.bundle */; };
+		61A48B0DBAE24DC09E1C642F /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2422CE0718B945A1A5CD575B /* CDVSplashScreen.m */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		94DEBBEAA26C42D7B1E28857 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EBBF65B3AD455F95F0A26D /* CDVNotification.m */; };
+		B37FB9BE1E1BA1F100E4A591 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37FB9BC1E1BA1F100E4A591 /* SetupViewController.m */; };
+		B37FB9BF1E1BA1F100E4A591 /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37FB9BD1E1BA1F100E4A591 /* SetupViewController.xib */; };
+		B37FB9C21E1BA1FC00E4A591 /* DeviceModelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B37FB9C11E1BA1FC00E4A591 /* DeviceModelInfo.m */; };
+		B3EB28831DDEF1DF00CED053 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB287E1DDEF1DF00CED053 /* MainViewController.m */; };
+		B3EB28841DDEF1DF00CED053 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EB287F1DDEF1DF00CED053 /* MainViewController.xib */; };
+		B3EB28931DDEF31900CED053 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28891DDEF31900CED053 /* LoadingView.m */; };
+		B3EB28941DDEF31900CED053 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB288C1DDEF31900CED053 /* NSObject+Utils.m */; };
+		B3EB28951DDEF31900CED053 /* WebProjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB288F1DDEF31900CED053 /* WebProjectInfo.m */; };
+		B3EB28961DDEF31900CED053 /* WebProjectSetupHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28911DDEF31900CED053 /* WebProjectSetupHelper.m */; };
+		B3EB289A1DDEF36F00CED053 /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28991DDEF36F00CED053 /* Alert.m */; };
+		B3EB289F1DDEF3A200CED053 /* UIColor+hexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB289C1DDEF3A200CED053 /* UIColor+hexColor.m */; };
+		B3EB28A01DDEF3A200CED053 /* UIView+LayerManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB289E1DDEF3A200CED053 /* UIView+LayerManagement.m */; };
+		B3EB28A31DDEF3BE00CED053 /* UIDevice+System.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28A21DDEF3BE00CED053 /* UIDevice+System.m */; };
+		B3EB28B31DDEF3D400CED053 /* CentralDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28A61DDEF3D400CED053 /* CentralDirectory.m */; };
+		B3EB28B41DDEF3D400CED053 /* FileHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28A81DDEF3D400CED053 /* FileHeader.m */; };
+		B3EB28B51DDEF3D400CED053 /* LocalFileHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28AA1DDEF3D400CED053 /* LocalFileHeader.m */; };
+		B3EB28B61DDEF3D400CED053 /* NSData+Value.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28AC1DDEF3D400CED053 /* NSData+Value.m */; };
+		B3EB28B71DDEF3D400CED053 /* NSDate+Dos.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28AE1DDEF3D400CED053 /* NSDate+Dos.m */; };
+		B3EB28B81DDEF3D400CED053 /* ZipUnarchiver+FileManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28B01DDEF3D400CED053 /* ZipUnarchiver+FileManagement.m */; };
+		B3EB28B91DDEF3D400CED053 /* ZipUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28B21DDEF3D400CED053 /* ZipUnarchiver.m */; };
+		B3EB28BF1DDEF41600CED053 /* NetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28BD1DDEF41600CED053 /* NetworkOperation.m */; };
+		B3EB28C21DDEF42800CED053 /* AssetsArchiveDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28C11DDEF42800CED053 /* AssetsArchiveDownloadOperation.m */; };
+		B3EB28C51DDEF43A00CED053 /* ApperyPublishingService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28C41DDEF43A00CED053 /* ApperyPublishingService.m */; };
+		B3EB28C91DDEF44B00CED053 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28C81DDEF44B00CED053 /* NetworkService.m */; };
+		B3EB28CC1DDEF46700CED053 /* NSString+XMLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28CB1DDEF46700CED053 /* NSString+XMLEscape.m */; };
+		B3EB28CF1DDEF47600CED053 /* NSThread+BlockExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EB28CE1DDEF47600CED053 /* NSThread+BlockExecution.m */; };
+		B3EB28D11DDEF4AC00CED053 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EB28D01DDEF4AC00CED053 /* libz.tbd */; };
+		BD3B9F773C164B51AAA1C9FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8754E42621C485AA9AEF3AE /* CoreLocation.framework */; };
+		C89943AC8A354F4BBB125727 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E456F7F8E1A847E795674113 /* CDVDevice.m */; };
+		D0E28DF9756D402F90110D31 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE591A6C2D64D2C95B23FD7 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D526D325583846908F24571A /* Insomnia.m in Sources */ = {isa = PBXBuildFile; fileRef = C5ED07A1B97746219A56CE5B /* Insomnia.m */; };
+		E46BA8A5F71D49DAB22A8749 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B038E9B5AE5E44CE9DC1C142 /* CDVLocation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Tab3_Plus/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		04A0F4A9BFC94280A48952AB /* CDVNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVNotification.h; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; };
+		13EBBF65B3AD455F95F0A26D /* CDVNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVNotification.m; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Tab3_Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tab3_Plus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2422CE0718B945A1A5CD575B /* CDVSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
+		27FD607A502E4D59B1A24DCE /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CDVNotification.bundle; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		3037592399944AE1B0F6D55B /* CDVSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* Tab3_Plus-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tab3_Plus-Prefix.pch"; sourceTree = "<group>"; };
+		40390A6323224BC38FAEF8B3 /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = Tab3_Plus/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		7189A3D5563A4A3895690DDD /* Insomnia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Insomnia.h; path = "cordova-plugin-insomnia/Insomnia.h"; sourceTree = "<group>"; };
+		80EEB3053A5F42518D48F30B /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Tab3_Plus-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Tab3_Plus-Info.plist"; path = "Tab3_Plus/Tab3_Plus-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		9AE591A6C2D64D2C95B23FD7 /* AudioToolbox.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B038E9B5AE5E44CE9DC1C142 /* CDVLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; };
+		B37FB9BB1E1BA1F100E4A591 /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
+		B37FB9BC1E1BA1F100E4A591 /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
+		B37FB9BD1E1BA1F100E4A591 /* SetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupViewController.xib; sourceTree = "<group>"; };
+		B37FB9C01E1BA1FC00E4A591 /* DeviceModelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModelInfo.h; sourceTree = "<group>"; };
+		B37FB9C11E1BA1FC00E4A591 /* DeviceModelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceModelInfo.m; sourceTree = "<group>"; };
+		B3EB287D1DDEF1DF00CED053 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B3EB287E1DDEF1DF00CED053 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B3EB287F1DDEF1DF00CED053 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		B3EB28881DDEF31900CED053 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		B3EB28891DDEF31900CED053 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		B3EB288B1DDEF31900CED053 /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
+		B3EB288C1DDEF31900CED053 /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
+		B3EB288E1DDEF31900CED053 /* WebProjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebProjectInfo.h; sourceTree = "<group>"; };
+		B3EB288F1DDEF31900CED053 /* WebProjectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebProjectInfo.m; sourceTree = "<group>"; };
+		B3EB28901DDEF31900CED053 /* WebProjectSetupHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebProjectSetupHelper.h; sourceTree = "<group>"; };
+		B3EB28911DDEF31900CED053 /* WebProjectSetupHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebProjectSetupHelper.m; sourceTree = "<group>"; };
+		B3EB28921DDEF31900CED053 /* WebProjectSetupHelperDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebProjectSetupHelperDelegate.h; sourceTree = "<group>"; };
+		B3EB28981DDEF36F00CED053 /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
+		B3EB28991DDEF36F00CED053 /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
+		B3EB289B1DDEF3A200CED053 /* UIColor+hexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hexColor.h"; sourceTree = "<group>"; };
+		B3EB289C1DDEF3A200CED053 /* UIColor+hexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hexColor.m"; sourceTree = "<group>"; };
+		B3EB289D1DDEF3A200CED053 /* UIView+LayerManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerManagement.h"; sourceTree = "<group>"; };
+		B3EB289E1DDEF3A200CED053 /* UIView+LayerManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayerManagement.m"; sourceTree = "<group>"; };
+		B3EB28A11DDEF3BE00CED053 /* UIDevice+System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+System.h"; sourceTree = "<group>"; };
+		B3EB28A21DDEF3BE00CED053 /* UIDevice+System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+System.m"; sourceTree = "<group>"; };
+		B3EB28A51DDEF3D400CED053 /* CentralDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CentralDirectory.h; sourceTree = "<group>"; };
+		B3EB28A61DDEF3D400CED053 /* CentralDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CentralDirectory.m; sourceTree = "<group>"; };
+		B3EB28A71DDEF3D400CED053 /* FileHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHeader.h; sourceTree = "<group>"; };
+		B3EB28A81DDEF3D400CED053 /* FileHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHeader.m; sourceTree = "<group>"; };
+		B3EB28A91DDEF3D400CED053 /* LocalFileHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalFileHeader.h; sourceTree = "<group>"; };
+		B3EB28AA1DDEF3D400CED053 /* LocalFileHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalFileHeader.m; sourceTree = "<group>"; };
+		B3EB28AB1DDEF3D400CED053 /* NSData+Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Value.h"; sourceTree = "<group>"; };
+		B3EB28AC1DDEF3D400CED053 /* NSData+Value.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Value.m"; sourceTree = "<group>"; };
+		B3EB28AD1DDEF3D400CED053 /* NSDate+Dos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Dos.h"; sourceTree = "<group>"; };
+		B3EB28AE1DDEF3D400CED053 /* NSDate+Dos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Dos.m"; sourceTree = "<group>"; };
+		B3EB28AF1DDEF3D400CED053 /* ZipUnarchiver+FileManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZipUnarchiver+FileManagement.h"; sourceTree = "<group>"; };
+		B3EB28B01DDEF3D400CED053 /* ZipUnarchiver+FileManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZipUnarchiver+FileManagement.m"; sourceTree = "<group>"; };
+		B3EB28B11DDEF3D400CED053 /* ZipUnarchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipUnarchiver.h; sourceTree = "<group>"; };
+		B3EB28B21DDEF3D400CED053 /* ZipUnarchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipUnarchiver.m; sourceTree = "<group>"; };
+		B3EB28BC1DDEF41600CED053 /* NetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkOperation.h; sourceTree = "<group>"; };
+		B3EB28BD1DDEF41600CED053 /* NetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkOperation.m; sourceTree = "<group>"; };
+		B3EB28C01DDEF42800CED053 /* AssetsArchiveDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsArchiveDownloadOperation.h; sourceTree = "<group>"; };
+		B3EB28C11DDEF42800CED053 /* AssetsArchiveDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsArchiveDownloadOperation.m; sourceTree = "<group>"; };
+		B3EB28C31DDEF43A00CED053 /* ApperyPublishingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApperyPublishingService.h; sourceTree = "<group>"; };
+		B3EB28C41DDEF43A00CED053 /* ApperyPublishingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApperyPublishingService.m; sourceTree = "<group>"; };
+		B3EB28C61DDEF44B00CED053 /* NetworkService_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService_Private.h; sourceTree = "<group>"; };
+		B3EB28C71DDEF44B00CED053 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		B3EB28C81DDEF44B00CED053 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		B3EB28CA1DDEF46700CED053 /* NSString+XMLEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLEscape.h"; sourceTree = "<group>"; };
+		B3EB28CB1DDEF46700CED053 /* NSString+XMLEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLEscape.m"; sourceTree = "<group>"; };
+		B3EB28CD1DDEF47600CED053 /* NSThread+BlockExecution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+BlockExecution.h"; sourceTree = "<group>"; };
+		B3EB28CE1DDEF47600CED053 /* NSThread+BlockExecution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+BlockExecution.m"; sourceTree = "<group>"; };
+		B3EB28D01DDEF4AC00CED053 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C5ED07A1B97746219A56CE5B /* Insomnia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Insomnia.m; path = "cordova-plugin-insomnia/Insomnia.m"; sourceTree = "<group>"; };
+		C8754E42621C485AA9AEF3AE /* CoreLocation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CA813836F9CA4989971FB649 /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
+		E456F7F8E1A847E795674113 /* CDVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Tab3_Plus/config.xml; sourceTree = "<group>"; };
+		FC5BDCC5670C4C8A8A802BC8 /* CDVLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EB28D11DDEF4AC00CED053 /* libz.tbd in Frameworks */,
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				D0E28DF9756D402F90110D31 /* AudioToolbox.framework in Frameworks */,
+				BD3B9F773C164B51AAA1C9FD /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB28BA1DDEF41600CED053 /* Networking */,
+				B3EB287C1DDEF1DF00CED053 /* UI */,
+				B3EB28741DDEF13500CED053 /* infrastructure */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = Tab3_Plus/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Tab3_Plus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Tab3_Plus-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = Tab3_Plus;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* Tab3_Plus-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				27FD607A502E4D59B1A24DCE /* CDVNotification.bundle */,
+			);
+			name = Resources;
+			path = Tab3_Plus/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB28D01DDEF4AC00CED053 /* libz.tbd */,
+				9AE591A6C2D64D2C95B23FD7 /* AudioToolbox.framework */,
+				C8754E42621C485AA9AEF3AE /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				C5ED07A1B97746219A56CE5B /* Insomnia.m */,
+				7189A3D5563A4A3895690DDD /* Insomnia.h */,
+				E456F7F8E1A847E795674113 /* CDVDevice.m */,
+				40390A6323224BC38FAEF8B3 /* CDVDevice.h */,
+				13EBBF65B3AD455F95F0A26D /* CDVNotification.m */,
+				04A0F4A9BFC94280A48952AB /* CDVNotification.h */,
+				2422CE0718B945A1A5CD575B /* CDVSplashScreen.m */,
+				CA813836F9CA4989971FB649 /* CDVViewController+SplashScreen.m */,
+				3037592399944AE1B0F6D55B /* CDVSplashScreen.h */,
+				80EEB3053A5F42518D48F30B /* CDVViewController+SplashScreen.h */,
+				B038E9B5AE5E44CE9DC1C142 /* CDVLocation.m */,
+				FC5BDCC5670C4C8A8A802BC8 /* CDVLocation.h */,
+			);
+			name = Plugins;
+			path = Tab3_Plus/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		B3EB28741DDEF13500CED053 /* infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB28A41DDEF3D400CED053 /* ZipUnarchiver */,
+				B3EB28971DDEF36F00CED053 /* Alert */,
+				B3EB28871DDEF31900CED053 /* LoadingView */,
+				B3EB288A1DDEF31900CED053 /* Utilities */,
+				B3EB288D1DDEF31900CED053 /* WebProject */,
+			);
+			path = infrastructure;
+			sourceTree = "<group>";
+		};
+		B3EB287C1DDEF1DF00CED053 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B37FB9BB1E1BA1F100E4A591 /* SetupViewController.h */,
+				B37FB9BC1E1BA1F100E4A591 /* SetupViewController.m */,
+				B37FB9BD1E1BA1F100E4A591 /* SetupViewController.xib */,
+				B3EB287D1DDEF1DF00CED053 /* MainViewController.h */,
+				B3EB287E1DDEF1DF00CED053 /* MainViewController.m */,
+				B3EB287F1DDEF1DF00CED053 /* MainViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B3EB28871DDEF31900CED053 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB28881DDEF31900CED053 /* LoadingView.h */,
+				B3EB28891DDEF31900CED053 /* LoadingView.m */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		B3EB288A1DDEF31900CED053 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B37FB9C01E1BA1FC00E4A591 /* DeviceModelInfo.h */,
+				B37FB9C11E1BA1FC00E4A591 /* DeviceModelInfo.m */,
+				B3EB28CD1DDEF47600CED053 /* NSThread+BlockExecution.h */,
+				B3EB28CE1DDEF47600CED053 /* NSThread+BlockExecution.m */,
+				B3EB28CA1DDEF46700CED053 /* NSString+XMLEscape.h */,
+				B3EB28CB1DDEF46700CED053 /* NSString+XMLEscape.m */,
+				B3EB28A11DDEF3BE00CED053 /* UIDevice+System.h */,
+				B3EB28A21DDEF3BE00CED053 /* UIDevice+System.m */,
+				B3EB289B1DDEF3A200CED053 /* UIColor+hexColor.h */,
+				B3EB289C1DDEF3A200CED053 /* UIColor+hexColor.m */,
+				B3EB289D1DDEF3A200CED053 /* UIView+LayerManagement.h */,
+				B3EB289E1DDEF3A200CED053 /* UIView+LayerManagement.m */,
+				B3EB288B1DDEF31900CED053 /* NSObject+Utils.h */,
+				B3EB288C1DDEF31900CED053 /* NSObject+Utils.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B3EB288D1DDEF31900CED053 /* WebProject */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB288E1DDEF31900CED053 /* WebProjectInfo.h */,
+				B3EB288F1DDEF31900CED053 /* WebProjectInfo.m */,
+				B3EB28901DDEF31900CED053 /* WebProjectSetupHelper.h */,
+				B3EB28911DDEF31900CED053 /* WebProjectSetupHelper.m */,
+				B3EB28921DDEF31900CED053 /* WebProjectSetupHelperDelegate.h */,
+			);
+			path = WebProject;
+			sourceTree = "<group>";
+		};
+		B3EB28971DDEF36F00CED053 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB28981DDEF36F00CED053 /* Alert.h */,
+				B3EB28991DDEF36F00CED053 /* Alert.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		B3EB28A41DDEF3D400CED053 /* ZipUnarchiver */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB28A51DDEF3D400CED053 /* CentralDirectory.h */,
+				B3EB28A61DDEF3D400CED053 /* CentralDirectory.m */,
+				B3EB28A71DDEF3D400CED053 /* FileHeader.h */,
+				B3EB28A81DDEF3D400CED053 /* FileHeader.m */,
+				B3EB28A91DDEF3D400CED053 /* LocalFileHeader.h */,
+				B3EB28AA1DDEF3D400CED053 /* LocalFileHeader.m */,
+				B3EB28AB1DDEF3D400CED053 /* NSData+Value.h */,
+				B3EB28AC1DDEF3D400CED053 /* NSData+Value.m */,
+				B3EB28AD1DDEF3D400CED053 /* NSDate+Dos.h */,
+				B3EB28AE1DDEF3D400CED053 /* NSDate+Dos.m */,
+				B3EB28AF1DDEF3D400CED053 /* ZipUnarchiver+FileManagement.h */,
+				B3EB28B01DDEF3D400CED053 /* ZipUnarchiver+FileManagement.m */,
+				B3EB28B11DDEF3D400CED053 /* ZipUnarchiver.h */,
+				B3EB28B21DDEF3D400CED053 /* ZipUnarchiver.m */,
+			);
+			path = ZipUnarchiver;
+			sourceTree = "<group>";
+		};
+		B3EB28BA1DDEF41600CED053 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB28BB1DDEF41600CED053 /* Operations */,
+				B3EB28BE1DDEF41600CED053 /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B3EB28BB1DDEF41600CED053 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB28C01DDEF42800CED053 /* AssetsArchiveDownloadOperation.h */,
+				B3EB28C11DDEF42800CED053 /* AssetsArchiveDownloadOperation.m */,
+				B3EB28BC1DDEF41600CED053 /* NetworkOperation.h */,
+				B3EB28BD1DDEF41600CED053 /* NetworkOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		B3EB28BE1DDEF41600CED053 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB28C61DDEF44B00CED053 /* NetworkService_Private.h */,
+				B3EB28C71DDEF44B00CED053 /* NetworkService.h */,
+				B3EB28C81DDEF44B00CED053 /* NetworkService.m */,
+				B3EB28C31DDEF43A00CED053 /* ApperyPublishingService.h */,
+				B3EB28C41DDEF43A00CED053 /* ApperyPublishingService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Tab3_Plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Tab3_Plus" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = Tab3_Plus;
+			productName = Tab3_Plus;
+			productReference = 1D6058910D05DD3D006BFB54 /* Tab3_Plus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = P6Q27LUYGD;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Tab3_Plus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Tab3_Plus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37FB9BF1E1BA1F100E4A591 /* SetupViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				B3EB28841DDEF1DF00CED053 /* MainViewController.xib in Resources */,
+				4F889D39A6AD4A458235B354 /* CDVNotification.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EB28951DDEF31900CED053 /* WebProjectInfo.m in Sources */,
+				B3EB28831DDEF1DF00CED053 /* MainViewController.m in Sources */,
+				B3EB28C21DDEF42800CED053 /* AssetsArchiveDownloadOperation.m in Sources */,
+				B3EB28BF1DDEF41600CED053 /* NetworkOperation.m in Sources */,
+				B3EB28CC1DDEF46700CED053 /* NSString+XMLEscape.m in Sources */,
+				B3EB289A1DDEF36F00CED053 /* Alert.m in Sources */,
+				B3EB28C51DDEF43A00CED053 /* ApperyPublishingService.m in Sources */,
+				B3EB28931DDEF31900CED053 /* LoadingView.m in Sources */,
+				B3EB28B41DDEF3D400CED053 /* FileHeader.m in Sources */,
+				B3EB28941DDEF31900CED053 /* NSObject+Utils.m in Sources */,
+				B3EB28961DDEF31900CED053 /* WebProjectSetupHelper.m in Sources */,
+				B3EB28B71DDEF3D400CED053 /* NSDate+Dos.m in Sources */,
+				B37FB9C21E1BA1FC00E4A591 /* DeviceModelInfo.m in Sources */,
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				B3EB28B51DDEF3D400CED053 /* LocalFileHeader.m in Sources */,
+				B37FB9BE1E1BA1F100E4A591 /* SetupViewController.m in Sources */,
+				B3EB28B91DDEF3D400CED053 /* ZipUnarchiver.m in Sources */,
+				B3EB28A31DDEF3BE00CED053 /* UIDevice+System.m in Sources */,
+				B3EB28B81DDEF3D400CED053 /* ZipUnarchiver+FileManagement.m in Sources */,
+				B3EB28B61DDEF3D400CED053 /* NSData+Value.m in Sources */,
+				B3EB289F1DDEF3A200CED053 /* UIColor+hexColor.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				B3EB28A01DDEF3A200CED053 /* UIView+LayerManagement.m in Sources */,
+				B3EB28C91DDEF44B00CED053 /* NetworkService.m in Sources */,
+				B3EB28B31DDEF3D400CED053 /* CentralDirectory.m in Sources */,
+				B3EB28CF1DDEF47600CED053 /* NSThread+BlockExecution.m in Sources */,
+				D526D325583846908F24571A /* Insomnia.m in Sources */,
+				C89943AC8A354F4BBB125727 /* CDVDevice.m in Sources */,
+				94DEBBEAA26C42D7B1E28857 /* CDVNotification.m in Sources */,
+				61A48B0DBAE24DC09E1C642F /* CDVSplashScreen.m in Sources */,
+				00E7B74B86A44298846B064D /* CDVViewController+SplashScreen.m in Sources */,
+				E46BA8A5F71D49DAB22A8749 /* CDVLocation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = P6Q27LUYGD;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tab3_Plus/Tab3_Plus-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Tab3_Plus/Tab3_Plus-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_NAME = Tab3_Plus;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = P6Q27LUYGD;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tab3_Plus/Tab3_Plus-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Tab3_Plus/Tab3_Plus-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_NAME = Tab3_Plus;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Tab3_Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Tab3_Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
